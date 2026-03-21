@@ -19,8 +19,10 @@ function formatYear(year: number): string {
 }
 
 export default function ResultScreen({ result, date }: ResultScreenProps) {
-  const { score, pairs, correctOrder } = result;
+  const { score, pairs, userOrder, correctOrder } = result;
   const tier = getTierLabel(score);
+  const correctCount = pairs.filter((p) => p.correct).length;
+  const maxStreak = pairs.reduce((max, p) => Math.max(max, p.streakAtThisPoint), 0);
 
   const handleShare = async () => {
     const pairEmojis = pairs.map((p) => (p.correct ? '✅' : '❌')).join('');
@@ -41,63 +43,101 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         <div className="score-number">{score}</div>
         <div className="score-denom">/ 1000</div>
         <div className="score-tier">{tier}</div>
+        <div className="score-stats">
+          <span className="score-pairs-badge">
+            {correctCount}/{pairs.length} pairs correct
+          </span>
+          {maxStreak >= 2 && (
+            <span className="score-streak-badge">
+              Best streak: {maxStreak} 🔥
+            </span>
+          )}
+        </div>
       </div>
 
-      {/* ── Pair Results ── */}
-      <section className="pairs-section">
-        <h2>Your Pairs</h2>
-        <div className="pairs-list">
-          {pairs.map((pair, i) => (
-            <div key={i} className={`pair-row ${pair.correct ? 'pair-correct' : 'pair-wrong'}`}>
-              <span className="pair-icon">{pair.correct ? '✅' : '❌'}</span>
-              <span className="pair-names">
-                <span className="pair-item">{pair.itemA.title}</span>
-                <span className="pair-arrow"> → </span>
-                <span className="pair-item">{pair.itemB.title}</span>
-              </span>
-              {pair.correct && (
-                <span className="pair-points">
-                  {pair.streakAtThisPoint > 1 && (
-                    <span className="pair-flame">{'🔥'.repeat(Math.min(pair.streakAtThisPoint - 1, 3))}</span>
+      {/* ── Timeline Comparison ── */}
+      <div className="timelines-comparison">
+        {/* User's timeline */}
+        <section className="timeline-col">
+          <h2 className="timeline-col-heading your-heading">Your Order</h2>
+          <div className="result-timeline">
+            {userOrder.map((item, i) => {
+              const pair = i < pairs.length ? pairs[i] : null;
+              return (
+                <div key={item.id} className="result-timeline-group">
+                  <div className="result-item">
+                    <span className="result-item-rank">{i + 1}</span>
+                    <img
+                      className="result-item-img"
+                      src={item.image}
+                      alt={item.title}
+                      loading="lazy"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                    <div className="result-item-info">
+                      <span className="result-item-year">{formatYear(item.year)}</span>
+                      <span className="result-item-title">{item.title}</span>
+                    </div>
+                  </div>
+                  {pair && (
+                    <div className={`result-pair-connector ${pair.correct ? 'connector-correct' : 'connector-wrong'}`}>
+                      <span className="connector-icon">{pair.correct ? '✅' : '❌'}</span>
+                      {pair.correct ? (
+                        <span className="connector-points">
+                          +{pair.points} pt{pair.points !== 1 ? 's' : ''}
+                          {pair.streakAtThisPoint >= 2 && (
+                            <span className="connector-streak"> 🔥×{pair.streakAtThisPoint}</span>
+                          )}
+                        </span>
+                      ) : (
+                        <span className="connector-wrong-label">Wrong order</span>
+                      )}
+                    </div>
                   )}
-                  +{pair.points}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Correct Timeline ── */}
-      <section className="timeline-section">
-        <h2>Correct Timeline</h2>
-        <div className="timeline">
-          {correctOrder.map((item, i) => (
-            <div key={item.id} className="timeline-item">
-              <div className="timeline-connector">
-                <div className="timeline-dot" />
-                {i < correctOrder.length - 1 && <div className="timeline-line" />}
-              </div>
-              <div className="timeline-card">
-                <img
-                  className="timeline-img"
-                  src={item.image}
-                  alt={item.title}
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
-                  }}
-                />
-                <div className="timeline-info">
-                  <span className="timeline-year">{formatYear(item.year)}</span>
-                  <h3 className="timeline-title">{item.title}</h3>
-                  <p className="timeline-description">{item.description}</p>
                 </div>
+              );
+            })}
+          </div>
+          <div className="scoring-note">
+            💡 <strong>How points work:</strong> Each correct consecutive pair earns <strong>1 base point</strong>, plus <strong>+1 per streak level</strong> (2 correct in a row = +2, three in a row = +3, etc.)
+          </div>
+        </section>
+
+        {/* Correct timeline */}
+        <section className="timeline-col">
+          <h2 className="timeline-col-heading correct-heading">Correct Order</h2>
+          <div className="result-timeline">
+            {correctOrder.map((item, i) => (
+              <div key={item.id} className="result-timeline-group">
+                <div className="result-item result-item-correct">
+                  <span className="result-item-rank correct-rank">{i + 1}</span>
+                  <img
+                    className="result-item-img"
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                    }}
+                  />
+                  <div className="result-item-info">
+                    <span className="result-item-year result-item-year-correct">{formatYear(item.year)}</span>
+                    <span className="result-item-title">{item.title}</span>
+                    <span className="result-item-desc">{item.description}</span>
+                  </div>
+                </div>
+                {i < correctOrder.length - 1 && (
+                  <div className="result-pair-connector connector-neutral">
+                    <span className="connector-icon">⬇️</span>
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      </div>
 
       {/* ── Actions ── */}
       <div className="result-actions">
