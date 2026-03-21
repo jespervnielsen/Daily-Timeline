@@ -1,6 +1,8 @@
-# React + TypeScript + Vite
+# Daily Timeline
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**[Live Demo](https://jespervnielsen.github.io/Daily-Timeline/)**
+
+A daily timeline app built with React, TypeScript, and Vite.
 
 Currently, two official plugins are available:
 
