@@ -257,6 +257,33 @@ button { cursor: pointer; border: none; font-family: inherit; }
   pointer-events: none;
 }
 
+/* ─── Mobile: compact horizontal cards ─────────── */
+@media (max-width: 639px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-image {
+    width: 88px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 36px 8px 10px;
+    min-height: 80px;
+  }
+
+  .card-drag-handle {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 /* ─── Submit area ─────────────────────────────── */
 .submit-area {
   margin-top: 28px;
