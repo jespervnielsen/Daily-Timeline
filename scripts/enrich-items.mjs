@@ -22,6 +22,29 @@ const ITEMS_PATH = join(__dirname, '../src/data/items.json');
 /** Milliseconds to wait between requests so we are polite to the Wikipedia API. */
 const RATE_LIMIT_MS = 200;
 
+/** Target thumbnail width used when normalising URLs fetched from the API.
+ *  320 px is a valid Wikimedia thumbnail step.
+ *  See https://www.mediawiki.org/wiki/Common_thumbnail_sizes
+ */
+const TARGET_WIDTH = 320;
+
+/**
+ * Replace the width encoded in a Wikimedia thumbnail URL with `targetWidth`.
+ * Handles the common pattern:
+ *   …/thumb/a/ab/Filename.jpg/{width}px-Filename.jpg
+ * as well as lossy TIFF variants:
+ *   …/thumb/a/ab/Filename.tiff/lossy-page1-{width}px-Filename.tiff.jpg
+ *
+ * Returns the original URL unchanged when the pattern is not recognised.
+ *
+ * @param {string} url
+ * @param {number} targetWidth
+ * @returns {string}
+ */
+function normaliseThumbWidth(url, targetWidth = TARGET_WIDTH) {
+  return url.replace(/(\/(?:lossy-page\d+-)?)\d+(px-)/g, `$1${targetWidth}$2`);
+}
+
 const USER_AGENT =
   'Daily-Timeline/1.0 (https://github.com/jespervnielsen/Daily-Timeline; enrichment-script)';
 
@@ -52,7 +75,8 @@ async function fetchWikipediaImage(wikipediaUrl) {
     }
 
     const data = await response.json();
-    return data?.thumbnail?.source ?? null;
+    const source = data?.thumbnail?.source ?? null;
+    return source ? normaliseThumbWidth(source) : null;
   } catch (err) {
     console.warn(`  Fetch error for ${apiUrl}: ${err.message}`);
     return null;
