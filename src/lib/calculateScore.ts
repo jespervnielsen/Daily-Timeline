@@ -1,15 +1,35 @@
 import type { Item, PairResult, ScoreResult } from '../types';
 
 export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreResult {
-  let streak = 0;
-  let rawScore = 0;
-  const pairs: PairResult[] = [];
+  // Build a map from item id to its correct position (no year values used)
+  const correctPositionMap = new Map<string, number>();
+  correctOrder.forEach((item, idx) => correctPositionMap.set(item.id, idx));
 
-  for (let i = 0; i < userOrder.length - 1; i++) {
-    const correct = userOrder[i].year <= userOrder[i + 1].year;
+  const n = userOrder.length;
+
+  // Calculate positional displacement for each item
+  // "one off" (displacement 1) scores much better than being far off (displacement 3+)
+  let totalDisplacement = 0;
+  userOrder.forEach((item, userIdx) => {
+    const correctIdx = correctPositionMap.get(item.id)!;
+    totalDisplacement += Math.abs(userIdx - correctIdx);
+  });
+
+  // Maximum possible displacement occurs when the order is completely reversed
+  let maxDisplacement = 0;
+  for (let i = 0; i < n; i++) {
+    maxDisplacement += Math.abs(i - (n - 1 - i));
+  }
+
+  // Build pair results using correct positions (not year values)
+  let streak = 0;
+  const pairs: PairResult[] = [];
+  for (let i = 0; i < n - 1; i++) {
+    const correctPosA = correctPositionMap.get(userOrder[i].id)!;
+    const correctPosB = correctPositionMap.get(userOrder[i + 1].id)!;
+    const correct = correctPosA < correctPosB;
     if (correct) {
       streak++;
-      rawScore += 1 + streak;
     } else {
       streak = 0;
     }
@@ -18,19 +38,12 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
       itemB: userOrder[i + 1],
       correct,
       streakAtThisPoint: streak,
-      points: correct ? 1 + streak : 0,
     });
   }
 
-  const maxScore = 14;
-  const score = Math.round((rawScore / maxScore) * 1000);
+  const rawScore = maxDisplacement - totalDisplacement;
+  const maxScore = maxDisplacement;
+  const score = Math.round(Math.max(0, rawScore / maxScore) * 1000);
 
-  return {
-    score,
-    pairs,
-    rawScore,
-    maxScore,
-    userOrder,
-    correctOrder,
-  };
+  return { score, pairs, rawScore, maxScore, userOrder, correctOrder };
 }

@@ -114,7 +114,6 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
                   <PairResultRow
                     isCorrect={pair.correct}
                     streak={pair.streakAtThisPoint}
-                    points={pair.points}
                     itemA={item}
                     itemB={userOrder[i + 1]}
                   />
@@ -125,7 +124,7 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         </div>
 
         <div className="scoring-note">
-          💡 <strong>How points work:</strong> Each correct consecutive pair earns <strong>1 base point</strong>, plus <strong>+1 per streak level</strong> (2 correct in a row = +2, three in a row = +3, etc.)
+          💡 <strong>How scoring works:</strong> Score is based on how close each item is to its correct position. Items in the right spot score best; being one place off loses fewer points than being far off.
         </div>
       </section>
 

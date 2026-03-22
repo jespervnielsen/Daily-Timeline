@@ -11,7 +11,6 @@ export interface PairResult {
   itemB: Item;
   correct: boolean;
   streakAtThisPoint: number;
-  points: number;
 }
 
 export interface ScoreResult {
