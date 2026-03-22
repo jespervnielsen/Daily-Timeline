@@ -1,5 +1,6 @@
 import type { ScoreResult, Item } from '../types';
 import PairResultRow from './PairResultRow';
+import WikimediaImage from './WikimediaImage';
 
 interface ResultScreenProps {
   result: ScoreResult;
@@ -102,14 +103,11 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               <div key={item.id} className="player-order-group">
                 {/* Card */}
                 <div className="result-card">
-                  <img
+                  <WikimediaImage
                     className="result-card-img"
-                    src={item.image}
+                    image={item.image}
                     alt={item.title}
-                    loading="lazy"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
-                    }}
+                    width={100}
                   />
                   <div className="result-card-body">
                     <span className="result-card-year">{formatYear(item.year)}</span>
@@ -142,14 +140,11 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
           {correctOrder.map((item, i) => (
             <div key={item.id} className="correct-timeline-group">
               <div className="correct-timeline-item">
-                <img
+                <WikimediaImage
                   className="correct-timeline-img"
-                  src={item.image}
+                  image={item.image}
                   alt={item.title}
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
-                  }}
+                  width={100}
                 />
                 <div className="correct-timeline-info">
                   <span className="correct-timeline-year">{formatYear(item.year)}</span>

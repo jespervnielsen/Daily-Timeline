@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import type { Item } from '../types';
+import WikimediaImage from './WikimediaImage';
 
 interface GameBoardProps {
   items: Item[];
@@ -150,15 +151,12 @@ export default function GameBoard({ items, onSubmit }: GameBoardProps) {
             onTouchEnd={onTouchEnd}
           >
             <div className="card-rank">{i + 1}</div>
-            <img
+            <WikimediaImage
               className="card-image"
-              src={item.image}
+              image={item.image}
               alt={item.title}
-              loading="lazy"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src =
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Camponotus_flavomarginatus_ant.jpg/320px-Camponotus_flavomarginatus_ant.jpg';
-              }}
+              width={320}
+              fallbackSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Camponotus_flavomarginatus_ant.jpg/320px-Camponotus_flavomarginatus_ant.jpg"
             />
             <div className="card-body">
               <h3 className="card-title">{item.title}</h3>
