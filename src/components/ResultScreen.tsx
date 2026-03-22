@@ -1,4 +1,5 @@
 import type { ScoreResult, Item } from '../types';
+import PairResultRow from './PairResultRow';
 
 interface ResultScreenProps {
   result: ScoreResult;
@@ -16,6 +17,14 @@ function getTierLabel(score: number): string {
 function formatYear(year: number): string {
   if (year < 0) return `${Math.abs(year)} BC`;
   return `${year} AD`;
+}
+
+function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): string {
+  const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
+  const diff = correctIndex - userIndex;
+  if (diff === 0) return 'Correct position ✓';
+  if (diff > 0) return `${diff} place${diff > 1 ? 's' : ''} too early`;
+  return `${Math.abs(diff)} place${Math.abs(diff) > 1 ? 's' : ''} too late`;
 }
 
 export default function ResultScreen({ result, date }: ResultScreenProps) {
@@ -55,66 +64,26 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         </div>
       </div>
 
-      {/* ── Timeline Comparison ── */}
-      <div className="timelines-comparison">
-        {/* User's timeline */}
-        <section className="timeline-col">
-          <h2 className="timeline-col-heading your-heading">Your Order</h2>
-          <div className="result-timeline">
-            {userOrder.map((item, i) => {
-              const pair = i < pairs.length ? pairs[i] : null;
-              return (
-                <div key={item.id} className="result-timeline-group">
-                  <div className="result-item">
-                    <span className="result-item-rank">{i + 1}</span>
-                    <img
-                      className="result-item-img"
-                      src={item.image}
-                      alt={item.title}
-                      loading="lazy"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                      }}
-                    />
-                    <div className="result-item-info">
-                      <span className="result-item-year">{formatYear(item.year)}</span>
-                      <span className="result-item-title">{item.title}</span>
-                    </div>
-                  </div>
-                  {pair && (
-                    <div className={`result-pair-connector ${pair.correct ? 'connector-correct' : 'connector-wrong'}`}>
-                      <span className="connector-icon">{pair.correct ? '✅' : '❌'}</span>
-                      {pair.correct ? (
-                        <span className="connector-points">
-                          +{pair.points} pt{pair.points !== 1 ? 's' : ''}
-                          {pair.streakAtThisPoint >= 2 && (
-                            <span className="connector-streak"> 🔥×{pair.streakAtThisPoint}</span>
-                          )}
-                        </span>
-                      ) : (
-                        <span className="connector-wrong-label">Wrong order</span>
-                      )}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-          <div className="scoring-note">
-            💡 <strong>How points work:</strong> Each correct consecutive pair earns <strong>1 base point</strong>, plus <strong>+1 per streak level</strong> (2 correct in a row = +2, three in a row = +3, etc.)
-          </div>
-        </section>
+      {/* ── Player Order with Pair Feedback ── */}
+      <section className="player-order-section">
+        <h2 className="section-heading your-order-heading">Your Order</h2>
+        <div className="player-order-list">
+          {userOrder.map((item, i) => {
+            const pair = i < pairs.length ? pairs[i] : null;
+            const streakBroken =
+              pair !== null &&
+              !pair.correct &&
+              i > 0 &&
+              pairs[i - 1].streakAtThisPoint > 0;
+            const positionHint = getPositionHint(item, i, correctOrder);
+            const hintCorrect = positionHint.startsWith('Correct');
 
-        {/* Correct timeline */}
-        <section className="timeline-col">
-          <h2 className="timeline-col-heading correct-heading">Correct Order</h2>
-          <div className="result-timeline">
-            {correctOrder.map((item, i) => (
-              <div key={item.id} className="result-timeline-group">
-                <div className="result-item result-item-correct">
-                  <span className="result-item-rank correct-rank">{i + 1}</span>
+            return (
+              <div key={item.id} className="player-order-group">
+                {/* Card */}
+                <div className="result-card">
                   <img
-                    className="result-item-img"
+                    className="result-card-img"
                     src={item.image}
                     alt={item.title}
                     loading="lazy"
@@ -122,22 +91,67 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
                       (e.target as HTMLImageElement).style.display = 'none';
                     }}
                   />
-                  <div className="result-item-info">
-                    <span className="result-item-year result-item-year-correct">{formatYear(item.year)}</span>
-                    <span className="result-item-title">{item.title}</span>
-                    <span className="result-item-desc">{item.description}</span>
+                  <div className="result-card-body">
+                    <span className="result-card-year">{formatYear(item.year)}</span>
+                    <span className="result-card-title">{item.title}</span>
+                    <span className={`result-card-hint ${hintCorrect ? 'hint-correct' : 'hint-wrong'}`}>
+                      {positionHint}
+                    </span>
                   </div>
                 </div>
-                {i < correctOrder.length - 1 && (
-                  <div className="result-pair-connector connector-neutral">
-                    <span className="connector-icon">⬇️</span>
-                  </div>
+
+                {/* Pair Result Row (between cards) */}
+                {pair && (
+                  <PairResultRow
+                    isCorrect={pair.correct}
+                    streak={pair.streakAtThisPoint}
+                    points={pair.points}
+                    itemA={item}
+                    itemB={userOrder[i + 1]}
+                    streakBroken={streakBroken}
+                  />
                 )}
               </div>
-            ))}
-          </div>
-        </section>
-      </div>
+            );
+          })}
+        </div>
+
+        <div className="scoring-note">
+          💡 <strong>How points work:</strong> Each correct consecutive pair earns <strong>1 base point</strong>, plus <strong>+1 per streak level</strong> (2 correct in a row = +2, three in a row = +3, etc.)
+        </div>
+      </section>
+
+      {/* ── Correct Timeline (Reference) ── */}
+      <section className="correct-timeline-section">
+        <h2 className="section-heading correct-order-heading">Correct Order</h2>
+        <div className="correct-timeline-list">
+          {correctOrder.map((item, i) => (
+            <div key={item.id} className="correct-timeline-group">
+              <div className="correct-timeline-item">
+                <img
+                  className="correct-timeline-img"
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }}
+                />
+                <div className="correct-timeline-info">
+                  <span className="correct-timeline-year">{formatYear(item.year)}</span>
+                  <span className="correct-timeline-title">{item.title}</span>
+                  {item.description && (
+                    <span className="correct-timeline-desc">{item.description}</span>
+                  )}
+                </div>
+              </div>
+              {i < correctOrder.length - 1 && (
+                <div className="correct-timeline-arrow">↓</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ── Actions ── */}
       <div className="result-actions">
