@@ -1,5 +1,11 @@
 import type { Item, PairResult, ScoreResult } from '../types';
 
+function getPositionPoints(diff: number): number {
+  if (diff === 0) return 2;
+  if (diff === 1) return 1.5;
+  return 1;
+}
+
 export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreResult {
   // Build a map from item id to its correct position
   const correctPositionMap = new Map<string, number>();
@@ -34,14 +40,7 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   let positionScore = 0;
   userOrder.forEach((item, userIdx) => {
     const correctIdx = correctPositionMap.get(item.id)!;
-    const diff = Math.abs(userIdx - correctIdx);
-    if (diff === 0) {
-      positionScore += 2;
-    } else if (diff === 1) {
-      positionScore += 1.5;
-    } else { // diff >= 2
-      positionScore += 1;
-    }
+    positionScore += getPositionPoints(Math.abs(userIdx - correctIdx));
   });
 
   // 3. Combine scores
@@ -53,8 +52,16 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   const maxPositionScore = 2 * n;
   const maxRaw = maxPairScore + maxPositionScore;
 
-  // 5. Normalize to 0–100
-  const score = Math.round((rawScore / maxRaw) * 100);
+  // 5. Minimum achievable raw score: reversed order (all pairs wrong, pairScore = 0)
+  //    Position score for reversed permutation where diff = |i - (n-1-i)|
+  let minPositionScore = 0;
+  for (let i = 0; i < n; i++) {
+    minPositionScore += getPositionPoints(Math.abs(i - (n - 1 - i)));
+  }
+  const minRaw = minPositionScore; // pairScore = 0 for fully reversed order
+
+  // 6. Normalize to 0–100 anchored to the true achievable range
+  const score = Math.max(0, Math.round(((rawScore - minRaw) / (maxRaw - minRaw)) * 100));
 
   return { score, pairs, rawScore, maxScore: maxRaw, userOrder, correctOrder };
 }

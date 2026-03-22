@@ -3,15 +3,15 @@ import PairResultRow from './PairResultRow';
 
 interface ResultScreenProps {
   result: ScoreResult;
-  items: Item[];
   date: string;
+  isRandom?: boolean;
 }
 
 function getTierLabel(score: number): string {
   if (score >= 90) return 'Perfect! 🏆';
   if (score >= 70) return 'Strong! 💪';
   if (score >= 40) return 'Okay! 👍';
-  return 'Almost! 🤔';
+  return 'Keep trying! 😅';
 }
 
 function formatYear(year: number): string {
@@ -27,14 +27,13 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
   return `${Math.abs(diff)} place${Math.abs(diff) > 1 ? 's' : ''} too late`;
 }
 
-export default function ResultScreen({ result, date }: ResultScreenProps) {
+export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
   const { score, pairs, userOrder, correctOrder } = result;
   const tier = getTierLabel(score);
   const correctCount = pairs.filter((p) => p.correct).length;
   const maxStreak = pairs.reduce((max, p) => Math.max(max, p.streakAtThisPoint), 0);
 
   const handleShare = async () => {
-    const formattedDate = new Date(date + 'T12:00:00').toLocaleDateString(navigator.language);
     const itemEmojis = userOrder.map((item) => {
       const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
       const userIndex = userOrder.findIndex((u) => u.id === item.id);
@@ -43,7 +42,19 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
       if (diff === 1) return '🟨';
       return '🟥';
     }).join('');
-    const text = `Daily Timeline ${formattedDate}\n${score} / 100 – ${tier}\n${itemEmojis}\n${window.location.href}`;
+
+    let text: string;
+    if (isRandom) {
+      text = `Daily Timeline 🔀 Random\n${score} / 100 – ${tier}\n${itemEmojis}`;
+    } else {
+      // Use 'en-US' for a consistent share format across all users and locales
+      const formattedDate = new Date(date + 'T12:00:00').toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      });
+      text = `Daily Timeline ${formattedDate}\n${score} / 100 – ${tier}\n${itemEmojis}\n${window.location.href}`;
+    }
     try {
       await navigator.clipboard.writeText(text);
       alert('Copied to clipboard! 📋');

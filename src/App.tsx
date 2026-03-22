@@ -103,7 +103,7 @@ export default function App() {
           <GameBoard items={currentItems} onSubmit={handleSubmit} />
         )}
         {gameState === 'finished' && result && (
-          <ResultScreen result={result} items={currentItems} date={today} />
+          <ResultScreen result={result} date={today} isRandom={isRandom} />
         )}
       </main>
 
