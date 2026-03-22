@@ -18,7 +18,7 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
     const correct = correctPosA < correctPosB;
     if (correct) {
       streak += 1;
-      pairScore += 2 + streak;
+      pairScore += 2 + streak * 0.5;
     } else {
       streak = 0;
     }
@@ -38,9 +38,9 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
     if (diff === 0) {
       positionScore += 2;
     } else if (diff === 1) {
+      positionScore += 1.5;
+    } else { // diff >= 2
       positionScore += 1;
-    } else {
-      positionScore += 0.5;
     }
   });
 
@@ -48,8 +48,8 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   const rawScore = pairScore + positionScore;
 
   // 4. Theoretical maximum: all pairs correct (growing streak) + all positions correct
-  // maxPairScore = sum of (2+k) for k=1..n-1 = 2(n-1) + n(n-1)/2
-  const maxPairScore = 2 * (n - 1) + (n * (n - 1)) / 2;
+  // maxPairScore = sum of (2 + k*0.5) for k=1..n-1 = 2(n-1) + (n-1)*n/4
+  const maxPairScore = 2 * (n - 1) + (n - 1) * n / 4;
   const maxPositionScore = 2 * n;
   const maxRaw = maxPairScore + maxPositionScore;
 
