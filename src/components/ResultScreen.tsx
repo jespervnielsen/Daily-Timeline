@@ -150,6 +150,16 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
                   {item.description && (
                     <span className="correct-timeline-desc">{item.description}</span>
                   )}
+                  {item.wikipedia && (
+                    <a
+                      className="wiki-link"
+                      href={item.wikipedia}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read more ↗
+                    </a>
+                  )}
                 </div>
               </div>
               {i < correctOrder.length - 1 && (
