@@ -511,6 +511,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
   color: var(--green);
 }
 
+.pair-result-correct-text {
+  font-size: 0.72rem;
+  color: var(--green);
+  opacity: 0.7;
+  font-weight: 400;
+}
+
 .pair-result-icon {
   font-size: 0.9rem;
   line-height: 1;

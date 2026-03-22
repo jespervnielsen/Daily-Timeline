@@ -8,9 +8,9 @@ interface ResultScreenProps {
 }
 
 function getTierLabel(score: number): string {
-  if (score >= 900) return 'Perfect! 🏆';
-  if (score >= 700) return 'Strong! 💪';
-  if (score >= 400) return 'Okay! 👍';
+  if (score >= 90) return 'Perfect! 🏆';
+  if (score >= 70) return 'Strong! 💪';
+  if (score >= 40) return 'Okay! 👍';
   return 'Almost! 🤔';
 }
 
@@ -43,7 +43,7 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
       if (diff === 1) return '🟨';
       return '🟥';
     }).join('');
-    const text = `Daily Timeline ${formattedDate}\n${score} / 1000 – ${tier}\n${itemEmojis}\n${window.location.href}`;
+    const text = `Daily Timeline ${formattedDate}\n${score} / 100 – ${tier}\n${itemEmojis}\n${window.location.href}`;
     try {
       await navigator.clipboard.writeText(text);
       alert('Copied to clipboard! 📋');
@@ -58,7 +58,7 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
       <div className="score-header">
         <div className="score-emoji">🎉</div>
         <div className="score-number">{score}</div>
-        <div className="score-denom">/ 1000</div>
+        <div className="score-denom">/ 100</div>
         <div className="score-tier">{tier}</div>
         <div className="score-stats">
           <span className="score-pairs-badge">
@@ -124,7 +124,7 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         </div>
 
         <div className="scoring-note">
-          💡 <strong>How scoring works:</strong> Score is based on how close each item is to its correct position. Items in the right spot score best; being one place off loses fewer points than being far off.
+          💡 <strong>How scoring works:</strong> Pairs in the right order earn streak bonuses, and each item earns extra points for landing in or near its correct position.
         </div>
       </section>
 

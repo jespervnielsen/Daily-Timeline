@@ -14,15 +14,14 @@ export default function PairResultRow({
   itemB,
 }: PairResultRowProps) {
   if (isCorrect) {
-    const streakLabel =
-      streak >= 5 ? 'You are on fire! 🔥🔥🔥' :
-      streak === 4 ? 'Hot streak! 🔥🔥' :
-      streak === 3 ? 'On a roll! 🔥' :
-      streak === 2 ? 'Nice pair! 🙌' :
-      'Correct! ✓';
+    const pairPoints = 2 + streak;
+    // streak is always ≥ 1 for correct pairs (incremented before recording)
+    const fireEmojis = '🔥'.repeat(Math.max(1, streak));
+    const streakLabel = `${fireEmojis} +${pairPoints}`;
     return (
       <div className="pair-result-row pair-result-row--correct">
         <span className="pair-result-label">{streakLabel}</span>
+        <span className="pair-result-correct-text">Correct order</span>
       </div>
     );
   }
