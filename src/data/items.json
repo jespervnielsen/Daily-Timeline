@@ -3,7 +3,7 @@
     "id": "great-pyramid",
     "title": "Great Pyramid of Giza Built",
     "year": -2560,
-    "image": "Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/320px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
     "description": "The Great Pyramid was built as a tomb for Pharaoh Khufu and stood as the world's tallest structure for over 3,800 years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
   },
@@ -11,7 +11,7 @@
     "id": "stonehenge",
     "title": "Stonehenge Completed",
     "year": -2500,
-    "image": "Stonehenge2007_07_30.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/320px-Stonehenge2007_07_30.jpg",
     "description": "Stonehenge's massive sarsen stone circle was completed around 2500 BC, though construction spanned over 1,500 years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Stonehenge"
   },
@@ -19,7 +19,7 @@
     "id": "hammurabi-code",
     "title": "Code of Hammurabi",
     "year": -1754,
-    "image": "P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/320px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
     "description": "One of the oldest deciphered legal codes, Hammurabi's laws covered trade, wages, theft, and family relations.",
     "wikipedia": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
   },
@@ -27,7 +27,7 @@
     "id": "trojan-war",
     "title": "Trojan War (Traditional Date)",
     "year": -1200,
-    "image": "Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg/320px-Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg",
     "description": "The legendary ten-year siege of Troy by Greek forces, immortalized in Homer's Iliad.",
     "wikipedia": "https://en.wikipedia.org/wiki/Trojan_War"
   },
@@ -35,7 +35,7 @@
     "id": "founding-of-rome",
     "title": "Traditional Founding of Rome",
     "year": -753,
-    "image": "Kapitolinische_Wölfin_Museum_Capitolini.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kapitolinische_W%C3%B6lfin_Museum_Capitolini.jpg/320px-Kapitolinische_W%C3%B6lfin_Museum_Capitolini.jpg",
     "description": "According to legend, Romulus founded Rome on April 21, 753 BC after killing his twin brother Remus in a dispute.",
     "wikipedia": "https://en.wikipedia.org/wiki/Founding_of_Rome"
   },
@@ -43,7 +43,7 @@
     "id": "first-olympics",
     "title": "First Olympic Games",
     "year": -776,
-    "image": "GR-olympia-palaestra.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/GR-olympia-palaestra.jpg/320px-GR-olympia-palaestra.jpg",
     "description": "The ancient Olympic Games were held in Olympia, Greece every four years, originally as a religious festival honoring Zeus.",
     "wikipedia": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"
   },
@@ -51,7 +51,7 @@
     "id": "buddha-born",
     "title": "Birth of the Buddha",
     "year": -563,
-    "image": "Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/320px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
     "description": "Siddhartha Gautama, who became the Buddha, was born in Lumbini (modern-day Nepal) and would found Buddhism.",
     "wikipedia": "https://en.wikipedia.org/wiki/Gautama_Buddha"
   },
@@ -59,7 +59,7 @@
     "id": "confucius-born",
     "title": "Confucius Born",
     "year": -551,
-    "image": "Confucius_Tang_Dynasty.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/320px-Confucius_Tang_Dynasty.jpg",
     "description": "Confucius, the Chinese philosopher whose teachings shaped East Asian culture, was born in 551 BC in the state of Lu.",
     "wikipedia": "https://en.wikipedia.org/wiki/Confucius"
   },
@@ -67,7 +67,7 @@
     "id": "persian-wars",
     "title": "Battle of Marathon",
     "year": -490,
-    "image": "Scene_of_the_Battle_of_Marathon.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Scene_of_the_Battle_of_Marathon.jpg/320px-Scene_of_the_Battle_of_Marathon.jpg",
     "description": "Athenian forces defeated the Persian army at Marathon, and a messenger supposedly ran 26 miles to Athens to announce victory.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Marathon"
   },
@@ -75,7 +75,7 @@
     "id": "parthenon",
     "title": "Parthenon Completed",
     "year": -432,
-    "image": "The_Parthenon_in_Athens.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/320px-The_Parthenon_in_Athens.jpg",
     "description": "Built atop Athens' Acropolis as a temple to Athena, the Parthenon remains one of the greatest architectural achievements.",
     "wikipedia": "https://en.wikipedia.org/wiki/Parthenon"
   },
@@ -83,7 +83,7 @@
     "id": "alexander-great",
     "title": "Alexander the Great's Conquests Begin",
     "year": -334,
-    "image": "Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg/320px-Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg",
     "description": "Alexander of Macedon launched his campaign against Persia at age 22, ultimately creating an empire stretching to India.",
     "wikipedia": "https://en.wikipedia.org/wiki/Alexander_the_Great"
   },
@@ -91,7 +91,7 @@
     "id": "great-wall-china",
     "title": "Great Wall of China Construction",
     "year": -221,
-    "image": "The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/320px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
     "description": "Emperor Qin Shi Huang unified existing walls into the Great Wall to protect China from northern nomadic invasions.",
     "wikipedia": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
   },
@@ -99,7 +99,7 @@
     "id": "julius-caesar-assassinated",
     "title": "Julius Caesar Assassinated",
     "year": -44,
-    "image": "Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg/320px-Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg",
     "description": "Julius Caesar was stabbed 23 times by Roman senators on the Ides of March, a murder that plunged Rome into civil war.",
     "wikipedia": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
   },
@@ -107,7 +107,7 @@
     "id": "jesus-born",
     "title": "Birth of Jesus",
     "year": -4,
-    "image": "Spas_vsederzhitel_sinay_(cropped1).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Spas_vsederzhitel_sinay_%28cropped1%29.jpg/320px-Spas_vsederzhitel_sinay_%28cropped1%29.jpg",
     "description": "Most historians place the birth of Jesus of Nazareth between 6–4 BC, despite the calendar bearing his name.",
     "wikipedia": "https://en.wikipedia.org/wiki/Jesus"
   },
@@ -115,7 +115,7 @@
     "id": "colosseum-built",
     "title": "Roman Colosseum Completed",
     "year": 80,
-    "image": "Colosseo_2020.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/320px-Colosseo_2020.jpg",
     "description": "The Flavian Amphitheatre (Colosseum) could hold 50,000–80,000 spectators watching gladiatorial contests and public spectacles.",
     "wikipedia": "https://en.wikipedia.org/wiki/Colosseum"
   },
@@ -123,7 +123,7 @@
     "id": "vesuvius-eruption",
     "title": "Mount Vesuvius Erupts",
     "year": 79,
-    "image": "Destruction_of_Pompeii_and_Herculaneum.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Destruction_of_Pompeii_and_Herculaneum.jpg/320px-Destruction_of_Pompeii_and_Herculaneum.jpg",
     "description": "The eruption of Vesuvius buried Pompeii and Herculaneum under ash and pumice, preserving a snapshot of Roman life.",
     "wikipedia": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
   },
@@ -131,7 +131,7 @@
     "id": "constantine-christianity",
     "title": "Constantine Legalizes Christianity",
     "year": 313,
-    "image": "Constantine_Chiaramonti_Inv1749.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/320px-Constantine_Chiaramonti_Inv1749.jpg",
     "description": "The Edict of Milan granted religious tolerance throughout the Roman Empire, ending persecution of Christians.",
     "wikipedia": "https://en.wikipedia.org/wiki/Edict_of_Milan"
   },
@@ -139,7 +139,7 @@
     "id": "fall-of-rome",
     "title": "Fall of the Western Roman Empire",
     "year": 476,
-    "image": "Roman_Republic_Empire_map.gif",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/320px-Roman_Republic_Empire_map.gif",
     "description": "Romulus Augustulus, the last Western Roman Emperor, was deposed by Germanic chieftain Odoacer, ending ancient Rome.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
   },
@@ -147,7 +147,7 @@
     "id": "muhammad-born",
     "title": "Birth of Muhammad",
     "year": 570,
-    "image": "Al-Masjid_AL-Nabawi_Door.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Al-Masjid_AL-Nabawi_Door.jpg/320px-Al-Masjid_AL-Nabawi_Door.jpg",
     "description": "The Prophet Muhammad, founder of Islam, was born in Mecca around 570 CE. His revelations formed the Quran.",
     "wikipedia": "https://en.wikipedia.org/wiki/Muhammad"
   },
@@ -155,7 +155,7 @@
     "id": "islamic-calendar",
     "title": "Hijra – Islamic Calendar Begins",
     "year": 622,
-    "image": "New_York_Public_Library,_Spencer_Collection_Turk._MS._3_Siyar-i_Nabî_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/New_York_Public_Library%2C_Spencer_Collection_Turk._MS._3_Siyar-i_Nab%C3%AE_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg/320px-thumbnail.jpg",
     "description": "Muhammad's migration from Mecca to Medina in 622 CE marks year 1 of the Islamic calendar and the birth of the Muslim community.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hijra_(Islam)"
   },
@@ -163,7 +163,7 @@
     "id": "charlemagne-crowned",
     "title": "Charlemagne Crowned Holy Roman Emperor",
     "year": 800,
-    "image": "Charlemagne_denier_Mayence_812_814.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/320px-Charlemagne_denier_Mayence_812_814.jpg",
     "description": "Pope Leo III crowned Charlemagne emperor on Christmas Day 800, uniting much of Western Europe for the first time since Rome.",
     "wikipedia": "https://en.wikipedia.org/wiki/Charlemagne"
   },
@@ -171,7 +171,7 @@
     "id": "viking-raids-begin",
     "title": "Viking Raids Begin",
     "year": 793,
-    "image": "Bildsten_från_Smiss,_Gotland.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Bildsten_fr%C3%A5n_Smiss%2C_Gotland.jpg/320px-Bildsten_fr%C3%A5n_Smiss%2C_Gotland.jpg",
     "description": "The raid on Lindisfarne Monastery in 793 CE is considered the start of the Viking Age of expansion and plunder.",
     "wikipedia": "https://en.wikipedia.org/wiki/Viking_Age"
   },
@@ -179,7 +179,7 @@
     "id": "battle-of-hastings",
     "title": "Battle of Hastings",
     "year": 1066,
-    "image": "Bayeux_Tapestry_scene57_Harold_death.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/320px-Bayeux_Tapestry_scene57_Harold_death.jpg",
     "description": "William the Conqueror defeated King Harold II, fundamentally changing English culture, language, and governance.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Hastings"
   },
@@ -187,7 +187,7 @@
     "id": "first-crusade",
     "title": "First Crusade Launched",
     "year": 1096,
-    "image": "Peter_the_Hermit.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Peter_the_Hermit.jpg/320px-Peter_the_Hermit.jpg",
     "description": "Pope Urban II called for Christian knights to recapture Jerusalem, launching two centuries of religious warfare.",
     "wikipedia": "https://en.wikipedia.org/wiki/First_Crusade"
   },
@@ -195,7 +195,7 @@
     "id": "magna-carta",
     "title": "Magna Carta Signed",
     "year": 1215,
-    "image": "Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg/320px-Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg",
     "description": "King John of England sealed the Magna Carta, establishing for the first time that everyone, including the king, is subject to the rule of law.",
     "wikipedia": "https://en.wikipedia.org/wiki/Magna_Carta"
   },
@@ -203,7 +203,7 @@
     "id": "genghis-khan",
     "title": "Genghis Khan Unifies Mongols",
     "year": 1206,
-    "image": "YuanEmperorAlbumGenghisPortrait.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/320px-YuanEmperorAlbumGenghisPortrait.jpg",
     "description": "Temujin was proclaimed Genghis Khan in 1206, leading the Mongols to build the largest contiguous empire in history.",
     "wikipedia": "https://en.wikipedia.org/wiki/Genghis_Khan"
   },
@@ -211,7 +211,7 @@
     "id": "marco-polo",
     "title": "Marco Polo Reaches China",
     "year": 1275,
-    "image": "Marco_Polo_-_costume_tartare.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Marco_Polo_-_costume_tartare.jpg/320px-Marco_Polo_-_costume_tartare.jpg",
     "description": "The Venetian explorer Marco Polo arrived at the court of Kublai Khan, spending 17 years in Asia and inspiring European curiosity.",
     "wikipedia": "https://en.wikipedia.org/wiki/Marco_Polo"
   },
@@ -219,7 +219,7 @@
     "id": "black-death",
     "title": "Black Death Reaches Europe",
     "year": 1347,
-    "image": "1346-1353_spread_of_the_Black_Death_in_Europe_map.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/320px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png",
     "description": "The bubonic plague killed an estimated 30–60% of Europe's population between 1347–1351, reshaping medieval society.",
     "wikipedia": "https://en.wikipedia.org/wiki/Black_Death"
   },
@@ -227,7 +227,7 @@
     "id": "gutenberg-printing-press",
     "title": "Gutenberg's Printing Press",
     "year": 1440,
-    "image": "PrintMus_038.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/PrintMus_038.jpg/320px-PrintMus_038.jpg",
     "description": "Johannes Gutenberg's movable type press revolutionized the spread of knowledge, enabling the Renaissance and Reformation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Printing_press"
   },
@@ -235,7 +235,7 @@
     "id": "fall-of-constantinople",
     "title": "Fall of Constantinople",
     "year": 1453,
-    "image": "Le_siège_de_Constantinople_(1453)_by_Jean_Le_Tavernier_after_1455.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Le_si%C3%A8ge_de_Constantinople_%281453%29_by_Jean_Le_Tavernier_after_1455.jpg/320px-Le_si%C3%A8ge_de_Constantinople_%281453%29_by_Jean_Le_Tavernier_after_1455.jpg",
     "description": "Ottoman Sultan Mehmed II conquered Constantinople, ending the Byzantine Empire and shifting trade routes to the sea.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
   },
@@ -243,7 +243,7 @@
     "id": "columbus-americas",
     "title": "Columbus Reaches the Americas",
     "year": 1492,
-    "image": "Viajes_de_colon_en2.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Viajes_de_colon_en2.svg/320px-Viajes_de_colon_en2.svg.png",
     "description": "Christopher Columbus landed in the Bahamas on October 12, 1492, opening the door to European colonization of the Americas.",
     "wikipedia": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"
   },
@@ -251,7 +251,7 @@
     "id": "vasco-da-gama",
     "title": "Vasco da Gama Reaches India",
     "year": 1498,
-    "image": "Ignoto_portoghese,_ritratto_di_un_cavaliere_dell'ordine_di_cristo,_1525-50_ca._02.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/320px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
     "description": "Portuguese explorer Vasco da Gama opened a sea route from Europe to India, transforming global trade.",
     "wikipedia": "https://en.wikipedia.org/wiki/Vasco_da_Gama"
   },
@@ -259,7 +259,7 @@
     "id": "sistine-chapel",
     "title": "Sistine Chapel Ceiling Completed",
     "year": 1512,
-    "image": "Sistine_Chapel_ceiling_02_(brightened).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/320px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
     "description": "Michelangelo completed his iconic ceiling fresco, including The Creation of Adam, after four years of painstaking work.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling"
   },
@@ -267,7 +267,7 @@
     "id": "protestant-reformation",
     "title": "Luther's 95 Theses",
     "year": 1517,
-    "image": "Luther_95_Thesen.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Luther_95_Thesen.png/320px-Luther_95_Thesen.png",
     "description": "Martin Luther nailed his 95 Theses to the church door in Wittenberg, igniting the Protestant Reformation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Ninety-five_Theses"
   },
@@ -275,7 +275,7 @@
     "id": "magellan-circumnavigation",
     "title": "Magellan's Circumnavigation",
     "year": 1519,
-    "image": "Ferdinand_Magellan.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ferdinand_Magellan.jpg/320px-Ferdinand_Magellan.jpg",
     "description": "Ferdinand Magellan led the first expedition to circumnavigate the globe, proving Earth is round.",
     "wikipedia": "https://en.wikipedia.org/wiki/Ferdinand_Magellan"
   },
@@ -283,7 +283,7 @@
     "id": "aztec-empire-falls",
     "title": "Fall of the Aztec Empire",
     "year": 1521,
-    "image": "Conquista-de-México-por-Cortés-Tenochtitlan-Painting.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png/320px-Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png",
     "description": "Spanish conquistador Hernán Cortés captured Tenochtitlan, destroying the Aztec Empire and establishing New Spain.",
     "wikipedia": "https://en.wikipedia.org/wiki/Conquest_of_the_Aztec_Empire"
   },
@@ -291,7 +291,7 @@
     "id": "heliocentric-model",
     "title": "Copernicus Publishes Heliocentric Model",
     "year": 1543,
-    "image": "Nikolaus_Kopernikus_MOT.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/320px-Nikolaus_Kopernikus_MOT.jpg",
     "description": "Nicolaus Copernicus proposed that the Earth orbits the Sun, revolutionizing our understanding of the solar system.",
     "wikipedia": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus"
   },
@@ -299,7 +299,7 @@
     "id": "shakespeare-born",
     "title": "Shakespeare Born",
     "year": 1564,
-    "image": "William_Shakespeare_by_John_Taylor,_edited.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/320px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
     "description": "William Shakespeare, history's greatest playwright and poet, was born in Stratford-upon-Avon, England.",
     "wikipedia": "https://en.wikipedia.org/wiki/William_Shakespeare"
   },
@@ -307,7 +307,7 @@
     "id": "spanish-armada",
     "title": "Spanish Armada Defeated",
     "year": 1588,
-    "image": "Armadaroute.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Armadaroute.jpg/320px-Armadaroute.jpg",
     "description": "England's navy, aided by storms, destroyed Spain's 'invincible' fleet, establishing English naval dominance.",
     "wikipedia": "https://en.wikipedia.org/wiki/Spanish_Armada"
   },
@@ -315,7 +315,7 @@
     "id": "galileo-telescope",
     "title": "Galileo's Astronomical Telescope",
     "year": 1609,
-    "image": "Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-320px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
     "description": "Galileo Galilei turned his improved telescope to the sky in 1609, discovering Jupiter's moons and confirming heliocentrism.",
     "wikipedia": "https://en.wikipedia.org/wiki/Galileo_Galilei"
   },
@@ -323,7 +323,7 @@
     "id": "mayflower",
     "title": "Mayflower Pilgrims Land",
     "year": 1620,
-    "image": "Copyrighted_and_Published_by_A_S_Burbank,_The_Mayflower_at_Sea_(NBY_21340).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg/320px-Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg",
     "description": "Puritan Pilgrims crossed the Atlantic on the Mayflower, founding Plymouth Colony and signing the Mayflower Compact.",
     "wikipedia": "https://en.wikipedia.org/wiki/Mayflower"
   },
@@ -339,7 +339,7 @@
     "id": "peter-great-russia",
     "title": "Peter the Great Modernizes Russia",
     "year": 1703,
-    "image": "Inconnu_d'après_J.-M._Nattier,_Portrait_de_Pierre_Ier_(musée_de_l’Ermitage).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg/320px-Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg",
     "description": "Peter the Great founded St. Petersburg in 1703 as Russia's 'window to the West', symbolizing the country's modernization.",
     "wikipedia": "https://en.wikipedia.org/wiki/Peter_the_Great"
   },
@@ -347,7 +347,7 @@
     "id": "american-revolution",
     "title": "American Declaration of Independence",
     "year": 1776,
-    "image": "United_States_Declaration_of_Independence.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/United_States_Declaration_of_Independence.jpg/320px-United_States_Declaration_of_Independence.jpg",
     "description": "The thirteen American colonies declared independence from Britain on July 4, 1776, founding the United States.",
     "wikipedia": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
   },
@@ -355,7 +355,7 @@
     "id": "french-revolution",
     "title": "French Revolution Begins",
     "year": 1789,
-    "image": "Anonymous_-_Prise_de_la_Bastille.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Anonymous_-_Prise_de_la_Bastille.jpg/320px-Anonymous_-_Prise_de_la_Bastille.jpg",
     "description": "The storming of the Bastille on July 14 triggered a revolution that toppled the monarchy and spread democratic ideals across Europe.",
     "wikipedia": "https://en.wikipedia.org/wiki/French_Revolution"
   },
@@ -363,7 +363,7 @@
     "id": "steam-engine-watt",
     "title": "Watt's Steam Engine Patented",
     "year": 1769,
-    "image": "Maquina_vapor_Watt_ETSIIM.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Maquina_vapor_Watt_ETSIIM.jpg/320px-Maquina_vapor_Watt_ETSIIM.jpg",
     "description": "James Watt's improved steam engine patent in 1769 powered the Industrial Revolution, transforming manufacturing and transportation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Watt_steam_engine"
   },
@@ -371,7 +371,7 @@
     "id": "haitian-revolution",
     "title": "Haitian Revolution",
     "year": 1791,
-    "image": "Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_révoltés._France_militaire._Martinet_et_Masson.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg/320px-Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg",
     "description": "Led by Toussaint Louverture, Haiti became the first country founded by a successful slave revolt in 1804.",
     "wikipedia": "https://en.wikipedia.org/wiki/Haitian_Revolution"
   },
@@ -379,7 +379,7 @@
     "id": "napoleon-emperor",
     "title": "Napoleon Becomes Emperor",
     "year": 1804,
-    "image": "Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/320px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
     "description": "Napoleon Bonaparte crowned himself Emperor of France in Notre-Dame Cathedral, cementing his transformation of Europe.",
     "wikipedia": "https://en.wikipedia.org/wiki/Napoleon"
   },
@@ -387,7 +387,7 @@
     "id": "waterloo",
     "title": "Battle of Waterloo",
     "year": 1815,
-    "image": "Battle_of_Waterloo_1815.PNG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Battle_of_Waterloo_1815.PNG/320px-Battle_of_Waterloo_1815.PNG",
     "description": "Napoleon's final defeat at Waterloo ended the Napoleonic Wars and led to his exile on the remote island of St. Helena.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Waterloo"
   },
@@ -403,7 +403,7 @@
     "id": "photography-invented",
     "title": "Photography Invented",
     "year": 1839,
-    "image": "Roger_Fenton's_waggon.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Roger_Fenton%27s_waggon.jpg/320px-Roger_Fenton%27s_waggon.jpg",
     "description": "Louis Daguerre invented the daguerreotype, the first practical photographic process, capturing the world on silver-coated plates.",
     "wikipedia": "https://en.wikipedia.org/wiki/History_of_photography"
   },
@@ -411,7 +411,7 @@
     "id": "darwin-evolution",
     "title": "Darwin Publishes On the Origin of Species",
     "year": 1859,
-    "image": "Origin_of_Species_title_page.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Origin_of_Species_title_page.jpg/320px-Origin_of_Species_title_page.jpg",
     "description": "Charles Darwin's theory of evolution by natural selection fundamentally changed biology and humanity's view of itself.",
     "wikipedia": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
   },
@@ -419,7 +419,7 @@
     "id": "american-civil-war",
     "title": "American Civil War Begins",
     "year": 1861,
-    "image": "Battle_of_Gettysburg,_by_Currier_and_Ives.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/320px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png",
     "description": "The deadliest conflict in American history was fought between the Union and Confederate states over slavery and states' rights.",
     "wikipedia": "https://en.wikipedia.org/wiki/American_Civil_War"
   },
@@ -427,7 +427,7 @@
     "id": "suez-canal",
     "title": "Suez Canal Opens",
     "year": 1869,
-    "image": "Iss016e019375.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Iss016e019375.jpg/320px-Iss016e019375.jpg",
     "description": "The 193-km Suez Canal connected the Mediterranean and Red Seas, dramatically shortening sea routes between Europe and Asia.",
     "wikipedia": "https://en.wikipedia.org/wiki/Suez_Canal"
   },
@@ -435,7 +435,7 @@
     "id": "telephone-invented",
     "title": "Alexander Graham Bell Patents Telephone",
     "year": 1876,
-    "image": "Telefon_BW_2012-02-18_13-44-32.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Telefon_BW_2012-02-18_13-44-32.JPG/320px-Telefon_BW_2012-02-18_13-44-32.JPG",
     "description": "Alexander Graham Bell patented the telephone in 1876, making his first call: 'Mr. Watson, come here—I want to see you.'",
     "wikipedia": "https://en.wikipedia.org/wiki/Telephone"
   },
@@ -443,7 +443,7 @@
     "id": "statue-of-liberty",
     "title": "Statue of Liberty Unveiled",
     "year": 1886,
-    "image": "Front_view_of_Statue_of_Liberty_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/320px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
     "description": "France's gift to America was dedicated on October 28, 1886, becoming a global symbol of freedom and democracy.",
     "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Liberty"
   },
@@ -451,7 +451,7 @@
     "id": "eiffel-tower",
     "title": "Eiffel Tower Completed",
     "year": 1889,
-    "image": "Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/320px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "description": "Built for the World's Fair, Gustave Eiffel's 300-metre iron tower was initially derided but became Paris's beloved icon.",
     "wikipedia": "https://en.wikipedia.org/wiki/Eiffel_Tower"
   },
@@ -459,7 +459,7 @@
     "id": "x-rays-discovered",
     "title": "X-Rays Discovered",
     "year": 1895,
-    "image": "Color_X-ray_photogram.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Color_X-ray_photogram.jpg/320px-Color_X-ray_photogram.jpg",
     "description": "Wilhelm Röntgen discovered X-rays and took the first medical X-ray image of his wife's hand, revolutionizing medicine.",
     "wikipedia": "https://en.wikipedia.org/wiki/X-ray"
   },
@@ -467,7 +467,7 @@
     "id": "first-modern-olympics",
     "title": "First Modern Olympic Games",
     "year": 1896,
-    "image": "Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilliéron.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg/320px-Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg",
     "description": "The modern Olympics were revived in Athens in 1896, with 14 nations competing in 43 events.",
     "wikipedia": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
   },
@@ -475,7 +475,7 @@
     "id": "radio-invented",
     "title": "Marconi Transmits Radio Signals",
     "year": 1901,
-    "image": "Guglielmo_Marconi.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Guglielmo_Marconi.jpg/320px-Guglielmo_Marconi.jpg",
     "description": "Guglielmo Marconi transmitted the first transatlantic wireless signal in 1901, ushering in the age of radio communication.",
     "wikipedia": "https://en.wikipedia.org/wiki/Guglielmo_Marconi"
   },
@@ -483,7 +483,7 @@
     "id": "wright-brothers",
     "title": "Wright Brothers First Flight",
     "year": 1903,
-    "image": "First_flight2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/First_flight2.jpg/320px-First_flight2.jpg",
     "description": "Orville Wright flew 120 feet in 12 seconds at Kitty Hawk, North Carolina, achieving the first powered heavier-than-air flight.",
     "wikipedia": "https://en.wikipedia.org/wiki/Wright_Flyer"
   },
@@ -491,7 +491,7 @@
     "id": "einstein-relativity",
     "title": "Einstein's Special Theory of Relativity",
     "year": 1905,
-    "image": "Einstein_patentoffice.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Einstein_patentoffice.jpg/320px-Einstein_patentoffice.jpg",
     "description": "Albert Einstein's annus mirabilis papers revolutionized physics, including E=mc², fundamentally changing our view of space and time.",
     "wikipedia": "https://en.wikipedia.org/wiki/Special_relativity"
   },
@@ -499,7 +499,7 @@
     "id": "titanic-sinks",
     "title": "RMS Titanic Sinks",
     "year": 1912,
-    "image": "Stöwer_Titanic.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/320px-St%C3%B6wer_Titanic.jpg",
     "description": "On her maiden voyage, the 'unsinkable' RMS Titanic struck an iceberg and sank, killing over 1,500 passengers and crew.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Titanic"
   },
@@ -507,7 +507,7 @@
     "id": "world-war-1",
     "title": "World War I Begins",
     "year": 1914,
-    "image": "Bataille_de_Verdun_1916.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/320px-Bataille_de_Verdun_1916.jpg",
     "description": "The assassination of Archduke Franz Ferdinand triggered a chain of alliances, plunging Europe into the first 'World War.'",
     "wikipedia": "https://en.wikipedia.org/wiki/World_War_I"
   },
@@ -515,7 +515,7 @@
     "id": "russian-revolution",
     "title": "Russian Revolution",
     "year": 1917,
-    "image": "Митинг_на_Невском_проспекте_(1917).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg/320px-%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg",
     "description": "The Bolshevik Revolution led by Lenin overthrew the tsar and established the world's first communist state.",
     "wikipedia": "https://en.wikipedia.org/wiki/Russian_Revolution"
   },
@@ -523,7 +523,7 @@
     "id": "end-world-war-1",
     "title": "World War I Ends",
     "year": 1918,
-    "image": "Armisticetrain_(slight_crop).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Armisticetrain_%28slight_crop%29.jpg/320px-Armisticetrain_%28slight_crop%29.jpg",
     "description": "The armistice at 11 a.m. on November 11, 1918 ended the Great War, which killed over 17 million people.",
     "wikipedia": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
   },
@@ -531,7 +531,7 @@
     "id": "spanish-flu",
     "title": "Spanish Flu Pandemic",
     "year": 1918,
-    "image": "Emergency_hospital_during_Influenza_epidemic,_Camp_Funston,_Kansas_-_NCP_1603.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/320px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg",
     "description": "The 1918 influenza pandemic infected an estimated 500 million people worldwide and killed 20–50 million.",
     "wikipedia": "https://en.wikipedia.org/wiki/1918_flu_pandemic"
   },
@@ -539,7 +539,7 @@
     "id": "women-vote-us",
     "title": "Women's Suffrage in USA",
     "year": 1920,
-    "image": "Greater_coat_of_arms_of_the_United_States.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/320px-Greater_coat_of_arms_of_the_United_States.svg.png",
     "description": "The 19th Amendment to the US Constitution granted women the right to vote, a milestone for the suffrage movement.",
     "wikipedia": "https://en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution"
   },
@@ -547,7 +547,7 @@
     "id": "penicillin-discovered",
     "title": "Penicillin Discovered",
     "year": 1928,
-    "image": "Penicillin_core.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/320px-Penicillin_core.svg.png",
     "description": "Alexander Fleming noticed that mold (Penicillium) killed bacteria on a petri dish, discovering the world's first antibiotic.",
     "wikipedia": "https://en.wikipedia.org/wiki/Penicillin"
   },
@@ -555,7 +555,7 @@
     "id": "great-depression",
     "title": "Wall Street Crash / Great Depression",
     "year": 1929,
-    "image": "Crowd_outside_nyse.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Crowd_outside_nyse.jpg/320px-Crowd_outside_nyse.jpg",
     "description": "The stock market crash of 1929 triggered a global economic depression lasting over a decade, with massive unemployment.",
     "wikipedia": "https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929"
   },
@@ -563,7 +563,7 @@
     "id": "world-war-2-begins",
     "title": "World War II Begins",
     "year": 1939,
-    "image": "Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/320px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
     "description": "Nazi Germany's invasion of Poland on September 1, 1939 triggered declarations of war from Britain and France.",
     "wikipedia": "https://en.wikipedia.org/wiki/World_War_II"
   },
@@ -571,7 +571,7 @@
     "id": "pearl-harbor",
     "title": "Attack on Pearl Harbor",
     "year": 1941,
-    "image": "Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Attack_on_Pearl_Harbor_Japanese_planes_view.jpg/320px-Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
     "description": "Japan's surprise attack on the US naval base at Pearl Harbor, Hawaii on December 7, 1941 drew America into World War II.",
     "wikipedia": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor"
   },
@@ -579,7 +579,7 @@
     "id": "d-day",
     "title": "D-Day Normandy Invasion",
     "year": 1944,
-    "image": "Into_the_Jaws_of_Death_23-0455M_edit.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Into_the_Jaws_of_Death_23-0455M_edit.jpg/320px-Into_the_Jaws_of_Death_23-0455M_edit.jpg",
     "description": "The largest seaborne invasion in history landed 156,000 Allied troops on Normandy beaches, turning the tide of WW2.",
     "wikipedia": "https://en.wikipedia.org/wiki/Normandy_landings"
   },
@@ -587,7 +587,7 @@
     "id": "hiroshima-bomb",
     "title": "Atomic Bomb Dropped on Hiroshima",
     "year": 1945,
-    "image": "Atomic_bombing_of_Japan.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/320px-Atomic_bombing_of_Japan.jpg",
     "description": "On August 6, 1945 the US dropped the first atomic bomb on Hiroshima, instantly killing 70,000 people.",
     "wikipedia": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
   },
@@ -595,7 +595,7 @@
     "id": "united-nations",
     "title": "United Nations Founded",
     "year": 1945,
-    "image": "Flag_of_the_United_Nations.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/320px-Flag_of_the_United_Nations.svg.png",
     "description": "The United Nations was founded on October 24, 1945 with 51 member states to promote peace, security, and cooperation.",
     "wikipedia": "https://en.wikipedia.org/wiki/United_Nations"
   },
@@ -603,7 +603,7 @@
     "id": "indian-independence",
     "title": "India Gains Independence",
     "year": 1947,
-    "image": "India,_by_British_Information_Services,_1944_restored_version.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/India%2C_by_British_Information_Services%2C_1944_restored_version.jpg/320px-India%2C_by_British_Information_Services%2C_1944_restored_version.jpg",
     "description": "India gained independence from British rule on August 15, 1947, after decades of nonviolent resistance led by Mahatma Gandhi.",
     "wikipedia": "https://en.wikipedia.org/wiki/Indian_independence_movement"
   },
@@ -611,7 +611,7 @@
     "id": "israel-founded",
     "title": "State of Israel Founded",
     "year": 1948,
-    "image": "Declaration_of_State_of_Israel_1948.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Declaration_of_State_of_Israel_1948.jpg/320px-Declaration_of_State_of_Israel_1948.jpg",
     "description": "The State of Israel declared independence on May 14, 1948, the first Jewish state in 2,000 years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Declaration_of_Independence_(Israel)"
   },
@@ -619,7 +619,7 @@
     "id": "nato-founded",
     "title": "NATO Founded",
     "year": 1949,
-    "image": "NATO_OTAN_landscape_logo.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/NATO_OTAN_landscape_logo.svg/320px-NATO_OTAN_landscape_logo.svg.png",
     "description": "The North Atlantic Treaty Organization was formed in 1949 as a collective security alliance among Western nations.",
     "wikipedia": "https://en.wikipedia.org/wiki/NATO"
   },
@@ -627,7 +627,7 @@
     "id": "dna-structure",
     "title": "DNA Double Helix Discovered",
     "year": 1953,
-    "image": "DNA_orbit_animated_static_thumb.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/DNA_orbit_animated_static_thumb.png",
     "description": "Watson, Crick, Franklin and Wilkins discovered the double-helix structure of DNA, unlocking the secret of life.",
     "wikipedia": "https://en.wikipedia.org/wiki/DNA_double_helix"
   },
@@ -635,7 +635,7 @@
     "id": "everest-climbed",
     "title": "Mount Everest First Climbed",
     "year": 1953,
-    "image": "Edmund_Hillary_and_Tenzing_Norgay.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Edmund_Hillary_and_Tenzing_Norgay.jpg/320px-Edmund_Hillary_and_Tenzing_Norgay.jpg",
     "description": "Edmund Hillary and Tenzing Norgay became the first people to reach the summit of Mount Everest on May 29, 1953.",
     "wikipedia": "https://en.wikipedia.org/wiki/1953_British_Mount_Everest_expedition"
   },
@@ -643,7 +643,7 @@
     "id": "rosa-parks",
     "title": "Rosa Parks Refuses to Give Up Her Seat",
     "year": 1955,
-    "image": "Rosa_Parks,_November_1956_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rosa_Parks%2C_November_1956_%28cropped%29.jpg/320px-Rosa_Parks%2C_November_1956_%28cropped%29.jpg",
     "description": "Rosa Parks' arrest in Montgomery, Alabama sparked the Montgomery Bus Boycott and galvanized the Civil Rights Movement.",
     "wikipedia": "https://en.wikipedia.org/wiki/Rosa_Parks"
   },
@@ -651,7 +651,7 @@
     "id": "sputnik",
     "title": "Sputnik Launched",
     "year": 1957,
-    "image": "Первый_в_мире_искусственный_спутник_Земли.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg/320px-%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg",
     "description": "The Soviet Union launched Sputnik, the world's first artificial satellite, starting the Space Race with the USA.",
     "wikipedia": "https://en.wikipedia.org/wiki/Sputnik_1"
   },
@@ -659,7 +659,7 @@
     "id": "cuban-revolution",
     "title": "Cuban Revolution",
     "year": 1959,
-    "image": "Fidel_Castro_and_his_men_in_the_Sierra_Maestra.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fidel_Castro_and_his_men_in_the_Sierra_Maestra.jpg/320px-Fidel_Castro_and_his_men_in_the_Sierra_Maestra.jpg",
     "description": "Fidel Castro and Che Guevara overthrew the Batista regime, establishing a communist government 90 miles from Florida.",
     "wikipedia": "https://en.wikipedia.org/wiki/Cuban_Revolution"
   },
@@ -667,7 +667,7 @@
     "id": "berlin-wall-built",
     "title": "Berlin Wall Built",
     "year": 1961,
-    "image": "Berlinermauer.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlinermauer.jpg/320px-Berlinermauer.jpg",
     "description": "East Germany built the Berlin Wall overnight, dividing the city and becoming the Cold War's most powerful symbol.",
     "wikipedia": "https://en.wikipedia.org/wiki/Berlin_Wall"
   },
@@ -675,7 +675,7 @@
     "id": "cuban-missile-crisis",
     "title": "Cuban Missile Crisis",
     "year": 1962,
-    "image": "PGM-19A_Jupiter_missile-02.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/PGM-19A_Jupiter_missile-02.jpg/320px-PGM-19A_Jupiter_missile-02.jpg",
     "description": "A 13-day confrontation between the US and USSR brought the world to the brink of nuclear war over Soviet missiles in Cuba.",
     "wikipedia": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis"
   },
@@ -683,7 +683,7 @@
     "id": "jfk-assassinated",
     "title": "JFK Assassinated",
     "year": 1963,
-    "image": "JFK_Motorcade_GettyImages-517330536.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/JFK_Motorcade_GettyImages-517330536.jpg/320px-JFK_Motorcade_GettyImages-517330536.jpg",
     "description": "President John F. Kennedy was shot and killed in Dallas, Texas on November 22, 1963, shocking the world.",
     "wikipedia": "https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy"
   },
@@ -691,7 +691,7 @@
     "id": "civil-rights-act",
     "title": "US Civil Rights Act Signed",
     "year": 1964,
-    "image": "Great_Seal_of_the_United_States_(obverse).svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/320px-Great_Seal_of_the_United_States_%28obverse%29.svg.png",
     "description": "President Lyndon B. Johnson signed the landmark Civil Rights Act, prohibiting discrimination based on race, color, religion or sex.",
     "wikipedia": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964"
   },
@@ -699,7 +699,7 @@
     "id": "moon-landing",
     "title": "Apollo 11 Moon Landing",
     "year": 1969,
-    "image": "A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/320px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
     "description": "Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon on July 20, 1969.",
     "wikipedia": "https://en.wikipedia.org/wiki/Apollo_11"
   },
@@ -707,7 +707,7 @@
     "id": "woodstock",
     "title": "Woodstock Music Festival",
     "year": 1969,
-    "image": "Woodstock_poster.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Woodstock_poster.jpg/320px-Woodstock_poster.jpg",
     "description": "Woodstock drew 400,000 people to a New York farm for three days of peace, love, and music, defining a generation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Woodstock_music_festival"
   },
@@ -715,7 +715,7 @@
     "id": "internet-arpanet",
     "title": "ARPANET (Internet) First Message",
     "year": 1969,
-    "image": "Arpanet_logical_map,_march_1977.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/320px-Arpanet_logical_map%2C_march_1977.png",
     "description": "The first message was sent over ARPANET on October 29, 1969 — 'lo' (the system crashed before 'login' could complete).",
     "wikipedia": "https://en.wikipedia.org/wiki/ARPANET"
   },
@@ -723,7 +723,7 @@
     "id": "watergate",
     "title": "Watergate Scandal",
     "year": 1972,
-    "image": "Watergate_complex.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Watergate_complex.jpg/320px-Watergate_complex.jpg",
     "description": "The Watergate break-in and Nixon's subsequent cover-up led to his resignation in 1974, the only US presidential resignation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Watergate_scandal"
   },
@@ -731,7 +731,7 @@
     "id": "vietnam-war-ends",
     "title": "Vietnam War Ends",
     "year": 1975,
-    "image": "U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Khâm_Đức,_Vietnam,_12_July_1970_(79431435).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg/320px-U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg",
     "description": "The fall of Saigon on April 30, 1975 ended the Vietnam War, with communist North Vietnam reunifying the country.",
     "wikipedia": "https://en.wikipedia.org/wiki/Vietnam_War"
   },
@@ -739,7 +739,7 @@
     "id": "personal-computer",
     "title": "Apple I Personal Computer",
     "year": 1976,
-    "image": "CopsonApple1_2k_cropped.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/CopsonApple1_2k_cropped.jpg/320px-CopsonApple1_2k_cropped.jpg",
     "description": "Steve Jobs and Steve Wozniak founded Apple and released the Apple I, helping launch the personal computer revolution.",
     "wikipedia": "https://en.wikipedia.org/wiki/Apple_I"
   },
@@ -755,7 +755,7 @@
     "id": "iran-revolution",
     "title": "Iranian Revolution",
     "year": 1979,
-    "image": "Mass_demonstration_in_Iran,_date_unknown.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mass_demonstration_in_Iran%2C_date_unknown.jpg/320px-Mass_demonstration_in_Iran%2C_date_unknown.jpg",
     "description": "The Iranian Revolution replaced the Shah with Ayatollah Khomeini's Islamic Republic, reshaping Middle Eastern politics.",
     "wikipedia": "https://en.wikipedia.org/wiki/Iranian_Revolution"
   },
@@ -763,7 +763,7 @@
     "id": "aids-epidemic",
     "title": "AIDS Epidemic Identified",
     "year": 1981,
-    "image": "Red_Ribbon.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/320px-Red_Ribbon.svg.png",
     "description": "The first cases of AIDS were reported in 1981; the epidemic would kill over 36 million people by 2020.",
     "wikipedia": "https://en.wikipedia.org/wiki/HIV/AIDS"
   },
@@ -771,7 +771,7 @@
     "id": "falklands-war",
     "title": "Falklands War",
     "year": 1982,
-    "image": "HMS_Broadsword_and_Hermes,_1982_(IWM).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/HMS_Broadsword_and_Hermes%2C_1982_%28IWM%29.jpg/320px-HMS_Broadsword_and_Hermes%2C_1982_%28IWM%29.jpg",
     "description": "Britain recaptured the Falkland Islands from Argentina in 1982 in a 74-day war that boosted Thatcher's popularity.",
     "wikipedia": "https://en.wikipedia.org/wiki/Falklands_War"
   },
@@ -779,7 +779,7 @@
     "id": "chernobyl",
     "title": "Chernobyl Nuclear Disaster",
     "year": 1986,
-    "image": "IAEA_02790015_(5613115146).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/320px-IAEA_02790015_%285613115146%29.jpg",
     "description": "The Chernobyl nuclear plant explosion was the world's worst nuclear accident, releasing radiation across Europe.",
     "wikipedia": "https://en.wikipedia.org/wiki/Chernobyl_disaster"
   },
@@ -787,7 +787,7 @@
     "id": "tiananmen-square",
     "title": "Tiananmen Square Massacre",
     "year": 1989,
-    "image": "Události_na_náměstí_Tian_an_men,_Čína_1989,_foto_Jiří_Tondl.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ud%C3%A1losti_na_n%C3%A1m%C4%9Bst%C3%AD_Tian_an_men%2C_%C4%8C%C3%ADna_1989%2C_foto_Ji%C5%99%C3%AD_Tondl.jpg",
     "description": "Chinese troops killed hundreds to thousands of pro-democracy protesters in Tiananmen Square on June 4, 1989.",
     "wikipedia": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre"
   },
@@ -795,7 +795,7 @@
     "id": "berlin-wall-falls",
     "title": "Berlin Wall Falls",
     "year": 1989,
-    "image": "West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg/320px-West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
     "description": "On November 9, 1989, East Germany opened its borders. Jubilant crowds tore down the Berlin Wall, symbolizing the end of the Cold War.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
   },
@@ -803,7 +803,7 @@
     "id": "world-wide-web",
     "title": "World Wide Web Invented",
     "year": 1991,
-    "image": "Chrome_on_Linux.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/320px-Chrome_on_Linux.png",
     "description": "Tim Berners-Lee published the World Wide Web in 1991, transforming the Internet into a global information network.",
     "wikipedia": "https://en.wikipedia.org/wiki/World_Wide_Web"
   },
@@ -819,7 +819,7 @@
     "id": "apartheid-ends",
     "title": "Apartheid Ends in South Africa",
     "year": 1994,
-    "image": "Monomotapa_Map.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Monomotapa_Map.jpg/320px-Monomotapa_Map.jpg",
     "description": "Nelson Mandela became South Africa's first black president in 1994 after decades of apartheid and 27 years in prison.",
     "wikipedia": "https://en.wikipedia.org/wiki/Apartheid"
   },
@@ -827,7 +827,7 @@
     "id": "rwandan-genocide",
     "title": "Rwandan Genocide",
     "year": 1994,
-    "image": "Nyamata_Memorial_Site_13.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nyamata_Memorial_Site_13.jpg/320px-Nyamata_Memorial_Site_13.jpg",
     "description": "Between April and July 1994, an estimated 500,000–800,000 Tutsi were killed by Hutu extremists in just 100 days.",
     "wikipedia": "https://en.wikipedia.org/wiki/Rwandan_genocide"
   },
@@ -835,7 +835,7 @@
     "id": "oklahoma-bombing",
     "title": "Oklahoma City Bombing",
     "year": 1995,
-    "image": "Oklahomacitybombing-DF-ST-98-01356.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Oklahomacitybombing-DF-ST-98-01356.jpg/320px-Oklahomacitybombing-DF-ST-98-01356.jpg",
     "description": "The deadliest domestic terrorist attack in US history killed 168 people including 19 children.",
     "wikipedia": "https://en.wikipedia.org/wiki/Oklahoma_City_bombing"
   },
@@ -851,7 +851,7 @@
     "id": "hong-kong-handover",
     "title": "Hong Kong Handover to China",
     "year": 1997,
-    "image": "Hkhistory.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Hkhistory.jpg",
     "description": "The UK returned Hong Kong to China on July 1, 1997 after 156 years of colonial rule, under 'one country, two systems.'",
     "wikipedia": "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong"
   },
@@ -859,7 +859,7 @@
     "id": "google-founded",
     "title": "Google Founded",
     "year": 1998,
-    "image": "Googleplex_HQ_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/320px-Googleplex_HQ_%28cropped%29.jpg",
     "description": "Larry Page and Sergey Brin incorporated Google while PhD students at Stanford, naming it after the number 'googol.'",
     "wikipedia": "https://en.wikipedia.org/wiki/Google"
   },
@@ -867,7 +867,7 @@
     "id": "euro-launched",
     "title": "Euro Currency Launched",
     "year": 1999,
-    "image": "Flag_of_Europe.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/320px-Flag_of_Europe.svg.png",
     "description": "The Euro was launched as an electronic currency in 1999 and as physical coins and notes in 2002, unifying European economies.",
     "wikipedia": "https://en.wikipedia.org/wiki/Euro"
   },
@@ -875,7 +875,7 @@
     "id": "september-11",
     "title": "September 11 Attacks",
     "year": 2001,
-    "image": "WTC_smoking_on_9-11.jpeg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/320px-WTC_smoking_on_9-11.jpeg",
     "description": "Al-Qaeda terrorists hijacked four planes on September 11, 2001, killing 2,977 people and transforming global security.",
     "wikipedia": "https://en.wikipedia.org/wiki/September_11_attacks"
   },
@@ -883,7 +883,7 @@
     "id": "human-genome",
     "title": "Human Genome Project Completed",
     "year": 2003,
-    "image": "Logo_HGP.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_HGP.jpg/320px-Logo_HGP.jpg",
     "description": "The Human Genome Project mapped all 3 billion base pairs of human DNA, opening a new era of medicine and genetics.",
     "wikipedia": "https://en.wikipedia.org/wiki/Human_Genome_Project"
   },
@@ -899,7 +899,7 @@
     "id": "2004-tsunami",
     "title": "Indian Ocean Tsunami",
     "year": 2004,
-    "image": "US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg/320px-US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg",
     "description": "A magnitude 9.1 earthquake triggered a tsunami that killed over 227,000 people across 14 countries on December 26, 2004.",
     "wikipedia": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami"
   },
@@ -907,7 +907,7 @@
     "id": "youtube-launched",
     "title": "YouTube Launched",
     "year": 2005,
-    "image": "Youtube_interface,_showing_search_results_of_Burger_Recipe.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/320px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png",
     "description": "YouTube was founded in 2005 by three PayPal employees and would transform how humanity consumes video content.",
     "wikipedia": "https://en.wikipedia.org/wiki/YouTube"
   },
@@ -915,7 +915,7 @@
     "id": "iphone-launch",
     "title": "iPhone Launched",
     "year": 2007,
-    "image": "IPhone_17_Pro_Vector.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/320px-IPhone_17_Pro_Vector.svg.png",
     "description": "Steve Jobs unveiled the original iPhone on January 9, 2007, revolutionizing mobile computing and launching the smartphone era.",
     "wikipedia": "https://en.wikipedia.org/wiki/iPhone"
   },
@@ -923,7 +923,7 @@
     "id": "obama-elected",
     "title": "Barack Obama Elected President",
     "year": 2008,
-    "image": "President_Barack_Obama.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/320px-President_Barack_Obama.jpg",
     "description": "Barack Obama became the 44th US President and the first African American to hold the office.",
     "wikipedia": "https://en.wikipedia.org/wiki/Barack_Obama"
   },
@@ -931,7 +931,7 @@
     "id": "global-financial-crisis",
     "title": "Global Financial Crisis",
     "year": 2008,
-    "image": "Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/320px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
     "description": "The collapse of Lehman Brothers triggered a global financial meltdown, the worst economic crisis since the Great Depression.",
     "wikipedia": "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008"
   },
@@ -939,7 +939,7 @@
     "id": "hadron-collider",
     "title": "Large Hadron Collider Activated",
     "year": 2008,
-    "image": "LHC.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/LHC.svg/320px-LHC.svg.png",
     "description": "CERN's Large Hadron Collider, the world's largest machine, began operation in 2008 and discovered the Higgs boson in 2012.",
     "wikipedia": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
   },
@@ -947,7 +947,7 @@
     "id": "bin-laden-killed",
     "title": "Osama bin Laden Killed",
     "year": 2011,
-    "image": "Osama_bin_Laden_compound1.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Osama_bin_Laden_compound1.jpg/320px-Osama_bin_Laden_compound1.jpg",
     "description": "US Navy SEALs killed Al-Qaeda leader Osama bin Laden in Pakistan on May 2, 2011, nearly 10 years after 9/11.",
     "wikipedia": "https://en.wikipedia.org/wiki/Death_of_Osama_bin_Laden"
   },
@@ -955,7 +955,7 @@
     "id": "arab-spring",
     "title": "Arab Spring",
     "year": 2011,
-    "image": "Infobox_collage_for_MENA_protests.PNG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Infobox_collage_for_MENA_protests.PNG/320px-Infobox_collage_for_MENA_protests.PNG",
     "description": "A wave of pro-democracy uprisings swept the Arab world from 2010–2012, toppling leaders in Tunisia, Egypt, Libya and Yemen.",
     "wikipedia": "https://en.wikipedia.org/wiki/Arab_Spring"
   },
@@ -963,7 +963,7 @@
     "id": "mars-curiosity",
     "title": "Curiosity Rover Lands on Mars",
     "year": 2012,
-    "image": "Curiosity_Self-Portrait_at_'Big_Sky'_Drilling_Site.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg/320px-Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg",
     "description": "NASA's Curiosity rover landed on Mars on August 6, 2012 and has been exploring the Gale Crater ever since.",
     "wikipedia": "https://en.wikipedia.org/wiki/Curiosity_(rover)"
   },
@@ -971,7 +971,7 @@
     "id": "higgs-boson",
     "title": "Higgs Boson Discovered",
     "year": 2012,
-    "image": "Candidate_Higgs_Events_in_ATLAS_and_CMS.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/320px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png",
     "description": "CERN announced the discovery of the Higgs boson — the 'God particle' — confirming the Standard Model of particle physics.",
     "wikipedia": "https://en.wikipedia.org/wiki/Higgs_boson"
   },
@@ -979,7 +979,7 @@
     "id": "paris-climate-accord",
     "title": "Paris Climate Agreement",
     "year": 2015,
-    "image": "ParisAgreement.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ParisAgreement.svg/320px-ParisAgreement.svg.png",
     "description": "196 nations signed the Paris Agreement in 2015, committing to limit global warming to 1.5°C above pre-industrial levels.",
     "wikipedia": "https://en.wikipedia.org/wiki/Paris_Agreement"
   },
@@ -987,7 +987,7 @@
     "id": "gravitational-waves",
     "title": "Gravitational Waves Detected",
     "year": 2015,
-    "image": "LIGO_measurement_of_gravitational_waves.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/LIGO_measurement_of_gravitational_waves.svg/320px-LIGO_measurement_of_gravitational_waves.svg.png",
     "description": "LIGO detected gravitational waves from two merging black holes, confirming Einstein's 100-year-old prediction.",
     "wikipedia": "https://en.wikipedia.org/wiki/First_detection_of_gravitational_waves"
   },
@@ -995,7 +995,7 @@
     "id": "brexit",
     "title": "Brexit Vote",
     "year": 2016,
-    "image": "Location_map_of_the_United_Kingdom_and_the_European_Union.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Location_map_of_the_United_Kingdom_and_the_European_Union.svg/320px-Location_map_of_the_United_Kingdom_and_the_European_Union.svg.png",
     "description": "The UK voted 52% to 48% to leave the European Union in a historic referendum that shocked global markets.",
     "wikipedia": "https://en.wikipedia.org/wiki/Brexit"
   },
@@ -1003,7 +1003,7 @@
     "id": "covid-pandemic",
     "title": "COVID-19 Pandemic",
     "year": 2020,
-    "image": "Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/320px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg",
     "description": "The COVID-19 pandemic, caused by SARS-CoV-2, killed over 6 million people and transformed life worldwide.",
     "wikipedia": "https://en.wikipedia.org/wiki/COVID-19_pandemic"
   },
@@ -1011,7 +1011,7 @@
     "id": "us-capitol-riot",
     "title": "US Capitol Stormed",
     "year": 2021,
-    "image": "2021_storming_of_the_United_States_Capitol_DSC09254-2_(50820534063)_(retouched).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2021_storming_of_the_United_States_Capitol_DSC09254-2_%2850820534063%29_%28retouched%29.jpg/320px-2021_storming_of_the_United_States_Capitol_DSC09254-2_%2850820534063%29_%28retouched%29.jpg",
     "description": "On January 6, 2021, supporters of President Trump stormed the US Capitol Building during the certification of electoral votes.",
     "wikipedia": "https://en.wikipedia.org/wiki/2021_United_States_Capitol_attack"
   },
@@ -1019,7 +1019,7 @@
     "id": "james-webb-telescope",
     "title": "James Webb Space Telescope Launched",
     "year": 2021,
-    "image": "JWST_spacecraft_model_3.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/320px-JWST_spacecraft_model_3.png",
     "description": "The James Webb Space Telescope launched on Christmas 2021, providing unprecedented views of the early universe.",
     "wikipedia": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
   },
@@ -1027,7 +1027,7 @@
     "id": "ukraine-invasion",
     "title": "Russia Invades Ukraine",
     "year": 2022,
-    "image": "2022_Russian_invasion_of_Ukraine.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2022_Russian_invasion_of_Ukraine.svg/320px-2022_Russian_invasion_of_Ukraine.svg.png",
     "description": "Russia launched a full-scale invasion of Ukraine on February 24, 2022, triggering Europe's largest conflict since WWII.",
     "wikipedia": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
   },
@@ -1035,7 +1035,7 @@
     "id": "chatgpt-launch",
     "title": "ChatGPT Launched",
     "year": 2022,
-    "image": "OpenAI_logo_2025_(symbol).svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/320px-OpenAI_logo_2025_%28symbol%29.svg.png",
     "description": "OpenAI's ChatGPT reached 1 million users in five days and 100 million in two months, sparking a global AI revolution.",
     "wikipedia": "https://en.wikipedia.org/wiki/ChatGPT"
   },
@@ -1043,7 +1043,7 @@
     "id": "aztec-calendar-stone",
     "title": "Aztec Calendar Stone Carved",
     "year": 1479,
-    "image": "Monolito_de_la_Piedra_del_Sol.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Monolito_de_la_Piedra_del_Sol.jpg/320px-Monolito_de_la_Piedra_del_Sol.jpg",
     "description": "The famous Aztec Sun Stone, often called the Aztec Calendar, was carved during the reign of Emperor Axayacatl.",
     "wikipedia": "https://en.wikipedia.org/wiki/Aztec_calendar_stone"
   },
@@ -1051,7 +1051,7 @@
     "id": "taj-mahal",
     "title": "Taj Mahal Completed",
     "year": 1648,
-    "image": "Taj_Mahal_(Edited).jpeg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/320px-Taj_Mahal_%28Edited%29.jpeg",
     "description": "Emperor Shah Jahan built the Taj Mahal as a mausoleum for his beloved wife Mumtaz Mahal. It took 22 years to complete.",
     "wikipedia": "https://en.wikipedia.org/wiki/Taj_Mahal"
   },
@@ -1059,7 +1059,7 @@
     "id": "english-civil-war",
     "title": "English Civil War",
     "year": 1642,
-    "image": "Battle_of_Naseby,_hand-coloured_copper_engraving.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Battle_of_Naseby%2C_hand-coloured_copper_engraving.jpg/320px-Battle_of_Naseby%2C_hand-coloured_copper_engraving.jpg",
     "description": "England's Civil War between Royalists and Parliamentarians led to the execution of Charles I and Oliver Cromwell's republic.",
     "wikipedia": "https://en.wikipedia.org/wiki/English_Civil_War"
   },
@@ -1067,7 +1067,7 @@
     "id": "glorious-revolution",
     "title": "Glorious Revolution",
     "year": 1688,
-    "image": "William_of_Orange_III_and_his_Dutch_army_land_in_Brixham,_1688.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg/320px-William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg",
     "description": "William of Orange replaced James II in England's peaceful revolution, establishing constitutional monarchy and parliamentary supremacy.",
     "wikipedia": "https://en.wikipedia.org/wiki/Glorious_Revolution"
   },
@@ -1075,7 +1075,7 @@
     "id": "declaration-rights",
     "title": "English Bill of Rights",
     "year": 1689,
-    "image": "Coat_of_arms_of_England_(1689–1694).svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Coat_of_arms_of_England_%281689%E2%80%931694%29.svg/320px-Coat_of_arms_of_England_%281689%E2%80%931694%29.svg.png",
     "description": "England's Bill of Rights established parliamentary sovereignty and constitutional limits on royal power, influencing future democracies.",
     "wikipedia": "https://en.wikipedia.org/wiki/Bill_of_Rights_1689"
   },
@@ -1083,7 +1083,7 @@
     "id": "us-constitution",
     "title": "US Constitution Ratified",
     "year": 1788,
-    "image": "Constitution_of_the_United_States,_page_1.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Constitution_of_the_United_States%2C_page_1.jpg/320px-Constitution_of_the_United_States%2C_page_1.jpg",
     "description": "The US Constitution, the world's longest-surviving written national charter, was ratified in 1788 and took effect in 1789.",
     "wikipedia": "https://en.wikipedia.org/wiki/United_States_Constitution"
   },
@@ -1091,7 +1091,7 @@
     "id": "battle-trafalgar",
     "title": "Battle of Trafalgar",
     "year": 1805,
-    "image": "The_Battle_of_Trafalgar_by_William_Clarkson_Stanfield.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_Battle_of_Trafalgar_by_William_Clarkson_Stanfield.jpg/320px-The_Battle_of_Trafalgar_by_William_Clarkson_Stanfield.jpg",
     "description": "Admiral Nelson's victory over the Franco-Spanish fleet secured British naval supremacy for a century, though Nelson died in battle.",
     "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Trafalgar"
   },
@@ -1099,7 +1099,7 @@
     "id": "abolition-slavery-britain",
     "title": "British Abolition of Slave Trade",
     "year": 1807,
-    "image": "Coat_of_Arms_of_the_United_Kingdom_(1801-1816).svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg/320px-Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg.png",
     "description": "Britain banned the slave trade in 1807, beginning the long process of dismantling the transatlantic slave trade.",
     "wikipedia": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807"
   },
@@ -1107,7 +1107,7 @@
     "id": "industrial-revolution",
     "title": "Industrial Revolution Peaks in Britain",
     "year": 1840,
-    "image": "Powerloom_weaving_in_1835.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Powerloom_weaving_in_1835.jpg/320px-Powerloom_weaving_in_1835.jpg",
     "description": "By the 1840s Britain was the 'workshop of the world', with railways, factories, and steam power transforming society.",
     "wikipedia": "https://en.wikipedia.org/wiki/Industrial_Revolution"
   },
@@ -1115,7 +1115,7 @@
     "id": "california-gold-rush",
     "title": "California Gold Rush",
     "year": 1848,
-    "image": "1850_Woman_and_Men_in_California_Gold_Rush.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/1850_Woman_and_Men_in_California_Gold_Rush.jpg/320px-1850_Woman_and_Men_in_California_Gold_Rush.jpg",
     "description": "The discovery of gold at Sutter's Mill in 1848 sparked a mass migration of 300,000 people to California.",
     "wikipedia": "https://en.wikipedia.org/wiki/California_Gold_Rush"
   },
@@ -1123,7 +1123,7 @@
     "id": "crimean-war",
     "title": "Crimean War",
     "year": 1853,
-    "image": "Осада_Силистрии_1._Виллевальде.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%D0%9E%D1%81%D0%B0%D0%B4%D0%B0_%D0%A1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B8_1._%D0%92%D0%B8%D0%BB%D0%BB%D0%B5%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%D0%B5.jpg/320px-%D0%9E%D1%81%D0%B0%D0%B4%D0%B0_%D0%A1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B8_1._%D0%92%D0%B8%D0%BB%D0%BB%D0%B5%D0%B2%D0%B0%D0%BB%D1%8C%D0%B4%D0%B5.jpg",
     "description": "The Crimean War saw Florence Nightingale revolutionize nursing, reducing hospital mortality from 40% to 2%.",
     "wikipedia": "https://en.wikipedia.org/wiki/Crimean_War"
   },
@@ -1131,7 +1131,7 @@
     "id": "transcontinental-railroad",
     "title": "Transcontinental Railroad Completed",
     "year": 1869,
-    "image": "East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg/320px-East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
     "description": "The golden spike was driven at Promontory Summit, Utah, completing the first US transcontinental railroad.",
     "wikipedia": "https://en.wikipedia.org/wiki/First_transcontinental_railroad"
   },
@@ -1139,7 +1139,7 @@
     "id": "light-bulb-invented",
     "title": "Edison Demonstrates Light Bulb",
     "year": 1879,
-    "image": "Gluehlampe_01_KMJ.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Gluehlampe_01_KMJ.png/320px-Gluehlampe_01_KMJ.png",
     "description": "Thomas Edison demonstrated a practical incandescent light bulb in 1879, eventually illuminating cities worldwide.",
     "wikipedia": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
   },
@@ -1147,7 +1147,7 @@
     "id": "automobile-invented",
     "title": "First Gasoline Automobile",
     "year": 1885,
-    "image": "1885Benz.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/1885Benz.jpg/320px-1885Benz.jpg",
     "description": "Karl Benz patented the Benz Patent-Motorwagen in 1886, generally considered the world's first true automobile.",
     "wikipedia": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
   },
@@ -1155,7 +1155,7 @@
     "id": "spanish-american-war",
     "title": "Spanish–American War",
     "year": 1898,
-    "image": "Collage_infobox_for_Spanish-American_War.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Collage_infobox_for_Spanish-American_War.jpg/320px-Collage_infobox_for_Spanish-American_War.jpg",
     "description": "The Spanish–American War ended with the US gaining Guam, Puerto Rico and the Philippines, becoming a global imperial power.",
     "wikipedia": "https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War"
   },
@@ -1163,7 +1163,7 @@
     "id": "south-africa-boer-war",
     "title": "Second Boer War Begins",
     "year": 1899,
-    "image": "Second_Boer_War_Collage.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Second_Boer_War_Collage.png/320px-Second_Boer_War_Collage.png",
     "description": "Britain's war against Boer settlers in South Africa introduced concentration camps and reshaped British imperial identity.",
     "wikipedia": "https://en.wikipedia.org/wiki/Second_Boer_War"
   },
@@ -1171,7 +1171,7 @@
     "id": "panama-canal",
     "title": "Panama Canal Opens",
     "year": 1914,
-    "image": "Panama_Canal_Map_EN.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Panama_Canal_Map_EN.svg/320px-Panama_Canal_Map_EN.svg.png",
     "description": "The Panama Canal opened on August 15, 1914, reducing the sea journey from New York to San Francisco by 7,800 miles.",
     "wikipedia": "https://en.wikipedia.org/wiki/Panama_Canal"
   },
@@ -1179,7 +1179,7 @@
     "id": "treaty-versailles",
     "title": "Treaty of Versailles",
     "year": 1919,
-    "image": "Treaty_of_Versailles,_English_version.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Treaty_of_Versailles%2C_English_version.jpg/320px-Treaty_of_Versailles%2C_English_version.jpg",
     "description": "The Treaty of Versailles officially ended WWI, imposing harsh reparations on Germany that contributed to WWII.",
     "wikipedia": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
   },
@@ -1187,7 +1187,7 @@
     "id": "prohibition",
     "title": "US Prohibition Begins",
     "year": 1920,
-    "image": "Detroit_police_inspecting_equipment_found_in_a_clandestine_underground_brewery_during_the_prohibition_era_-_NARA_-_541928.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Detroit_police_inspecting_equipment_found_in_a_clandestine_underground_brewery_during_the_prohibition_era_-_NARA_-_541928.jpg/320px-Detroit_police_inspecting_equipment_found_in_a_clandestine_underground_brewery_during_the_prohibition_era_-_NARA_-_541928.jpg",
     "description": "The 18th Amendment banned alcohol in the US from 1920–1933, fueling organized crime and the rise of gangsters like Al Capone.",
     "wikipedia": "https://en.wikipedia.org/wiki/Prohibition_in_the_United_States"
   },
@@ -1195,7 +1195,7 @@
     "id": "chinese-civil-war",
     "title": "Chinese Communist Revolution",
     "year": 1949,
-    "image": "Battle_of_Siping03.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Battle_of_Siping03.jpg/320px-Battle_of_Siping03.jpg",
     "description": "Mao Zedong proclaimed the People's Republic of China on October 1, 1949, after defeating Chiang Kai-shek's Nationalists.",
     "wikipedia": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
   },
@@ -1203,7 +1203,7 @@
     "id": "korean-war",
     "title": "Korean War",
     "year": 1950,
-    "image": "Chosin.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/320px-Chosin.jpg",
     "description": "The Korean War (1950–1953) ended in armistice, leaving Korea divided at the 38th parallel, still split today.",
     "wikipedia": "https://en.wikipedia.org/wiki/Korean_War"
   },
@@ -1211,7 +1211,7 @@
     "id": "suez-crisis",
     "title": "Suez Crisis",
     "year": 1956,
-    "image": "Port_Said_from_air.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Port_Said_from_air.jpg/320px-Port_Said_from_air.jpg",
     "description": "Egypt nationalized the Suez Canal; British and French intervention backfired, marking the end of European imperial dominance.",
     "wikipedia": "https://en.wikipedia.org/wiki/Suez_Crisis"
   },
@@ -1219,7 +1219,7 @@
     "id": "yuri-gagarin",
     "title": "Yuri Gagarin First Human in Space",
     "year": 1961,
-    "image": "Yuri_Gagarin_with_awards_(cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yuri_Gagarin_with_awards_%28cropped%29.jpg/320px-Yuri_Gagarin_with_awards_%28cropped%29.jpg",
     "description": "Soviet cosmonaut Yuri Gagarin became the first human in space on April 12, 1961, completing one orbit of Earth.",
     "wikipedia": "https://en.wikipedia.org/wiki/Yuri_Gagarin"
   },
@@ -1227,7 +1227,7 @@
     "id": "vietnam-war-begins",
     "title": "Vietnam War Escalates",
     "year": 1965,
-    "image": "U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Khâm_Đức,_Vietnam,_12_July_1970_(79431435).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg/320px-U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg",
     "description": "US combat troops were deployed to Vietnam in 1965, beginning a decade of devastating warfare that cost 58,000 American lives.",
     "wikipedia": "https://en.wikipedia.org/wiki/Vietnam_War"
   },
@@ -1235,7 +1235,7 @@
     "id": "six-day-war",
     "title": "Six-Day War",
     "year": 1967,
-    "image": "6DayWarEnglish.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/6DayWarEnglish.png/320px-6DayWarEnglish.png",
     "description": "Israel defeated Egypt, Jordan and Syria in six days, capturing the West Bank, Gaza Strip, Sinai and Golan Heights.",
     "wikipedia": "https://en.wikipedia.org/wiki/Six-Day_War"
   },
@@ -1251,7 +1251,7 @@
     "id": "opec-oil-crisis",
     "title": "OPEC Oil Crisis",
     "year": 1973,
-    "image": "West_Texas_Intermediate_oil_prices_1950–2000_(with_1973_highlight).svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/West_Texas_Intermediate_oil_prices_1950%E2%80%932000_%28with_1973_highlight%29.svg/320px-West_Texas_Intermediate_oil_prices_1950%E2%80%932000_%28with_1973_highlight%29.svg.png",
     "description": "Arab oil-producing nations embargoed the US, causing oil prices to quadruple and triggering a global economic recession.",
     "wikipedia": "https://en.wikipedia.org/wiki/1973_oil_crisis"
   },
@@ -1259,7 +1259,7 @@
     "id": "microsoft-founded",
     "title": "Microsoft Founded",
     "year": 1975,
-    "image": "Aerial_Microsoft_West_Campus_August_2009.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Aerial_Microsoft_West_Campus_August_2009.jpg/320px-Aerial_Microsoft_West_Campus_August_2009.jpg",
     "description": "Bill Gates and Paul Allen founded Microsoft in 1975. Their MS-DOS operating system later launched the personal computer era.",
     "wikipedia": "https://en.wikipedia.org/wiki/Microsoft"
   },
@@ -1267,7 +1267,7 @@
     "id": "camp-david-accords",
     "title": "Camp David Accords",
     "year": 1978,
-    "image": "Close_up_of_Menahem_Begin,_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.,_09-07-1978_-_NARA_-_181133.tif",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Close_up_of_Menahem_Begin%2C_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.%2C_09-07-1978_-_NARA_-_181133.tif/lossy-page1-320px-Close_up_of_Menahem_Begin%2C_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.%2C_09-07-1978_-_NARA_-_181133.tif.jpg",
     "description": "President Carter brokered a historic peace agreement between Egypt's Sadat and Israel's Begin, the first Arab-Israeli peace deal.",
     "wikipedia": "https://en.wikipedia.org/wiki/Camp_David_Accords"
   },
@@ -1275,7 +1275,7 @@
     "id": "challenger-disaster",
     "title": "Space Shuttle Challenger Disaster",
     "year": 1986,
-    "image": "Challenger_explosion.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Challenger_explosion.jpg/320px-Challenger_explosion.jpg",
     "description": "The Space Shuttle Challenger broke apart 73 seconds after launch, killing all 7 crew members and shocking the nation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster"
   },
@@ -1283,7 +1283,7 @@
     "id": "mandela-freed",
     "title": "Nelson Mandela Released",
     "year": 1990,
-    "image": "Nelson_Mandela_1994.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/320px-Nelson_Mandela_1994.jpg",
     "description": "Nelson Mandela walked free from Victor Verster Prison on February 11, 1990 after 27 years, setting South Africa on a new path.",
     "wikipedia": "https://en.wikipedia.org/wiki/Nelson_Mandela"
   },
@@ -1291,7 +1291,7 @@
     "id": "gulf-war",
     "title": "Gulf War",
     "year": 1991,
-    "image": "USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg/320px-USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg",
     "description": "A US-led coalition expelled Iraq from Kuwait in 42 days of combat, but left Saddam Hussein in power.",
     "wikipedia": "https://en.wikipedia.org/wiki/Gulf_War"
   },
@@ -1299,7 +1299,7 @@
     "id": "hubble-telescope",
     "title": "Hubble Space Telescope Launched",
     "year": 1990,
-    "image": "HST-SM4.jpeg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HST-SM4.jpeg/320px-HST-SM4.jpeg",
     "description": "The Hubble Space Telescope has transformed astronomy, capturing images of the universe's deepest corners for over 30 years.",
     "wikipedia": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
   },
@@ -1307,7 +1307,7 @@
     "id": "euro-tunnel",
     "title": "Channel Tunnel Opens",
     "year": 1994,
-    "image": "TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_à_Coquelles.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/320px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg",
     "description": "The 50-km Channel Tunnel linking England and France via high-speed rail was the engineering achievement of the decade.",
     "wikipedia": "https://en.wikipedia.org/wiki/Channel_Tunnel"
   },
@@ -1315,7 +1315,7 @@
     "id": "nato-expands-east",
     "title": "NATO Expands into Eastern Europe",
     "year": 1999,
-    "image": "History_of_NATO_enlargement_animation.gif",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/History_of_NATO_enlargement_animation.gif/320px-History_of_NATO_enlargement_animation.gif",
     "description": "Poland, Hungary and Czech Republic joined NATO in 1999, the first former Warsaw Pact nations to join the Western alliance.",
     "wikipedia": "https://en.wikipedia.org/wiki/NATO_enlargement"
   },
@@ -1323,7 +1323,7 @@
     "id": "dot-com-crash",
     "title": "Dot-Com Bubble Bursts",
     "year": 2000,
-    "image": "Nasdaq_Composite_dot-com_bubble.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Nasdaq_Composite_dot-com_bubble.svg/320px-Nasdaq_Composite_dot-com_bubble.svg.png",
     "description": "The dot-com bubble burst in March 2000, wiping out trillions in market value and ending the 1990s internet gold rush.",
     "wikipedia": "https://en.wikipedia.org/wiki/Dot-com_bubble"
   },
@@ -1331,7 +1331,7 @@
     "id": "afghanistan-war",
     "title": "War in Afghanistan Begins",
     "year": 2001,
-    "image": "U.S._Army_firefight_in_Kunar.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/U.S._Army_firefight_in_Kunar.jpg/320px-U.S._Army_firefight_in_Kunar.jpg",
     "description": "The US invaded Afghanistan on October 7, 2001 in response to 9/11, beginning the longest war in American history.",
     "wikipedia": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021)"
   },
@@ -1339,7 +1339,7 @@
     "id": "iraq-war",
     "title": "US Invasion of Iraq",
     "year": 2003,
-    "image": "U.S._Marines_with_Iraqi_POWs_-_March_21,_2003.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/U.S._Marines_with_Iraqi_POWs_-_March_21%2C_2003.jpg/320px-U.S._Marines_with_Iraqi_POWs_-_March_21%2C_2003.jpg",
     "description": "The US-led invasion of Iraq in 2003 toppled Saddam Hussein but sparked an insurgency and regional instability.",
     "wikipedia": "https://en.wikipedia.org/wiki/2003_invasion_of_Iraq"
   },
@@ -1347,7 +1347,7 @@
     "id": "twitter-founded",
     "title": "Twitter Launched",
     "year": 2006,
-    "image": "X_(formerly_Twitter)_logo_late_2025.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg/320px-X_%28formerly_Twitter%29_logo_late_2025.svg.png",
     "description": "Twitter launched in 2006, transforming political discourse and news with its 140-character (later 280) format.",
     "wikipedia": "https://en.wikipedia.org/wiki/Twitter"
   },
@@ -1355,7 +1355,7 @@
     "id": "tesla-founded",
     "title": "Tesla Motors Founded",
     "year": 2003,
-    "image": "Tesla_Motors.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/320px-Tesla_Motors.svg.png",
     "description": "Tesla Motors was incorporated in 2003 by engineers Martin Eberhard and Marc Tarpenning, later joined by Elon Musk.",
     "wikipedia": "https://en.wikipedia.org/wiki/Tesla,_Inc."
   },
@@ -1363,7 +1363,7 @@
     "id": "airbnb-founded",
     "title": "Airbnb Founded",
     "year": 2008,
-    "image": "888_Brannan,_San_Francisco,_2016.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/888_Brannan%2C_San_Francisco%2C_2016.jpg/320px-888_Brannan%2C_San_Francisco%2C_2016.jpg",
     "description": "Airbnb began when two designers rented out their San Francisco apartment with air mattresses, creating a $75 billion company.",
     "wikipedia": "https://en.wikipedia.org/wiki/Airbnb"
   },
@@ -1371,7 +1371,7 @@
     "id": "deepwater-horizon",
     "title": "Deepwater Horizon Oil Spill",
     "year": 2010,
-    "image": "Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg/320px-Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg",
     "description": "The Deepwater Horizon blowout released 4.9 million barrels of oil into the Gulf of Mexico — the largest marine oil spill ever.",
     "wikipedia": "https://en.wikipedia.org/wiki/Deepwater_Horizon_explosion"
   },
@@ -1379,7 +1379,7 @@
     "id": "fukushima",
     "title": "Fukushima Nuclear Disaster",
     "year": 2011,
-    "image": "Fukushima_I_by_Digital_Globe.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Fukushima_I_by_Digital_Globe.jpg/320px-Fukushima_I_by_Digital_Globe.jpg",
     "description": "A magnitude 9.1 earthquake and tsunami triggered meltdowns at the Fukushima Daiichi plant, Japan's worst nuclear disaster.",
     "wikipedia": "https://en.wikipedia.org/wiki/Fukushima_nuclear_disaster"
   },
@@ -1403,7 +1403,7 @@
     "id": "greta-thunberg",
     "title": "Greta Thunberg's Climate Strike",
     "year": 2019,
-    "image": "Greta_Thunberg_in_November_in_Stockholm_(cropped)(2).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Greta_Thunberg_in_November_in_Stockholm_%28cropped%29%282%29.jpg/320px-Greta_Thunberg_in_November_in_Stockholm_%28cropped%29%282%29.jpg",
     "description": "Greta Thunberg's school strike inspired millions worldwide to march for climate action in the largest climate protest in history.",
     "wikipedia": "https://en.wikipedia.org/wiki/Greta_Thunberg"
   },
@@ -1411,7 +1411,7 @@
     "id": "taliban-retakes-afghanistan",
     "title": "Taliban Retakes Afghanistan",
     "year": 2021,
-    "image": "2021_Taliban_Offensive.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2021_Taliban_Offensive.png/320px-2021_Taliban_Offensive.png",
     "description": "The Taliban swept back into power in August 2021 as US troops completed their withdrawal after 20 years of war.",
     "wikipedia": "https://en.wikipedia.org/wiki/2021_Taliban_offensive"
   },
@@ -1419,7 +1419,7 @@
     "id": "pope-francis",
     "title": "Pope Francis Elected",
     "year": 2013,
-    "image": "Pope_Francis_Korea_Haemi_Castle_19_(4x5_cropped).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Pope_Francis_Korea_Haemi_Castle_19_%284x5_cropped%29.jpg/320px-Pope_Francis_Korea_Haemi_Castle_19_%284x5_cropped%29.jpg",
     "description": "Jorge Mario Bergoglio became Pope Francis in 2013, the first Jesuit pope and the first from the Americas.",
     "wikipedia": "https://en.wikipedia.org/wiki/Pope_Francis"
   },
@@ -1427,7 +1427,7 @@
     "id": "ebola-outbreak",
     "title": "West Africa Ebola Outbreak",
     "year": 2014,
-    "image": "2014_ebola_virus_epidemic_in_West_Africa_simplified.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/2014_ebola_virus_epidemic_in_West_Africa_simplified.svg/320px-2014_ebola_virus_epidemic_in_West_Africa_simplified.svg.png",
     "description": "The 2014–2016 Ebola epidemic in West Africa killed over 11,000 people and triggered a global health emergency.",
     "wikipedia": "https://en.wikipedia.org/wiki/Western_African_Ebola_virus_epidemic"
   },
@@ -1435,7 +1435,7 @@
     "id": "spacex-falcon-9",
     "title": "SpaceX Lands Reusable Rocket",
     "year": 2015,
-    "image": "ORBCOMM-2_(23282658734).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/ORBCOMM-2_%2823282658734%29.jpg/320px-ORBCOMM-2_%2823282658734%29.jpg",
     "description": "SpaceX successfully landed and recovered a Falcon 9 orbital rocket booster in December 2015, revolutionizing space launch economics.",
     "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_reusable_launch_system_development_program"
   },
@@ -1443,7 +1443,7 @@
     "id": "pluto-flyby",
     "title": "New Horizons Pluto Flyby",
     "year": 2015,
-    "image": "New_Horizons_spacecraft_model_1.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/New_Horizons_spacecraft_model_1.png/320px-New_Horizons_spacecraft_model_1.png",
     "description": "NASA's New Horizons spacecraft flew past Pluto in 2015, revealing a surprisingly complex world with mountains and a heart-shaped plain.",
     "wikipedia": "https://en.wikipedia.org/wiki/New_Horizons"
   },
@@ -1451,7 +1451,7 @@
     "id": "trump-elected",
     "title": "Donald Trump Elected US President",
     "year": 2016,
-    "image": "Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/320px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg",
     "description": "Donald Trump's shock 2016 election victory over Hillary Clinton upended the political establishment and polarized the nation.",
     "wikipedia": "https://en.wikipedia.org/wiki/Donald_Trump"
   },
@@ -1459,7 +1459,7 @@
     "id": "me-too-movement",
     "title": "#MeToo Movement Goes Viral",
     "year": 2017,
-    "image": "Can_You_Hear_Me_Now?_-MeToo_(39787332552).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg/320px-Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg",
     "description": "The #MeToo movement exploded in 2017 following Harvey Weinstein exposés, sparking a global reckoning with sexual harassment.",
     "wikipedia": "https://en.wikipedia.org/wiki/MeToo_movement"
   },
@@ -1475,7 +1475,7 @@
     "id": "queen-elizabeth-dies",
     "title": "Queen Elizabeth II Dies",
     "year": 2022,
-    "image": "Queen_Elizabeth_II_Funeral_Procession_(1).jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Queen_Elizabeth_II_Funeral_Procession_%281%29.jpg/320px-Queen_Elizabeth_II_Funeral_Procession_%281%29.jpg",
     "description": "Queen Elizabeth II, Britain's longest-reigning monarch at 70 years, died on September 8, 2022 at Balmoral Castle.",
     "wikipedia": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Elizabeth_II"
   }
