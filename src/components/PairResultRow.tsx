@@ -6,7 +6,6 @@ interface PairResultRowProps {
   points: number;
   itemA: Item;
   itemB: Item;
-  streakBroken: boolean;
 }
 
 export default function PairResultRow({
@@ -15,16 +14,18 @@ export default function PairResultRow({
   points,
   itemA,
   itemB,
-  streakBroken,
 }: PairResultRowProps) {
   if (isCorrect) {
-    const fireEmojis = '🔥'.repeat(streak);
-    const streakLabel = streak >= 2 ? ` (streak ×${streak})` : '';
+    const streakLabel =
+      streak >= 5 ? 'You are on fire! 🔥🔥🔥' :
+      streak === 4 ? 'Hot streak! 🔥🔥' :
+      streak === 3 ? 'On a roll! 🔥' :
+      streak === 2 ? 'Nice pair! 🙌' :
+      'Correct! ✓';
     return (
       <div className="pair-result-row pair-result-row--correct">
-        <span className="pair-result-fire">{fireEmojis}</span>
         <span className="pair-result-points">+{points}</span>
-        <span className="pair-result-label">Correct order{streakLabel}</span>
+        <span className="pair-result-label">{streakLabel}</span>
       </div>
     );
   }
@@ -37,9 +38,6 @@ export default function PairResultRow({
       <span className="pair-result-icon">❌</span>
       <div className="pair-result-wrong-info">
         <span className="pair-result-label">Wrong order</span>
-        {streakBroken && (
-          <span className="pair-result-streak-broken">Streak broken</span>
-        )}
         <span className="pair-result-explanation">{explanation}</span>
       </div>
     </div>
