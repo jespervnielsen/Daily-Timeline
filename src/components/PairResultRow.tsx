@@ -14,7 +14,7 @@ export default function PairResultRow({
   itemB,
 }: PairResultRowProps) {
   if (isCorrect) {
-    const pairPoints = 2 + streak;
+    const pairPoints = 2 + streak * 0.5;
     // streak is always ≥ 1 for correct pairs (incremented before recording)
     const fireEmojis = '🔥'.repeat(Math.max(1, streak));
     const streakLabel = `${fireEmojis} +${pairPoints}`;
