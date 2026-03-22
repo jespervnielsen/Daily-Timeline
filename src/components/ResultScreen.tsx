@@ -34,8 +34,16 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
   const maxStreak = pairs.reduce((max, p) => Math.max(max, p.streakAtThisPoint), 0);
 
   const handleShare = async () => {
-    const pairEmojis = pairs.map((p) => (p.correct ? '✅' : '❌')).join('');
-    const text = `Daily Timeline ${date}\n${score}/1000 – ${tier}\n${pairEmojis}\nhttps://github.com/your-repo/Daily-Timeline`;
+    const formattedDate = new Date(date + 'T12:00:00').toLocaleDateString(navigator.language);
+    const itemEmojis = userOrder.map((item) => {
+      const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
+      const userIndex = userOrder.findIndex((u) => u.id === item.id);
+      const diff = Math.abs(correctIndex - userIndex);
+      if (diff === 0) return '🟩';
+      if (diff === 1) return '🟨';
+      return '🟥';
+    }).join('');
+    const text = `Daily Timeline ${formattedDate}\n${score} / 1000 – ${tier}\n${itemEmojis}\n${window.location.href}`;
     try {
       await navigator.clipboard.writeText(text);
       alert('Copied to clipboard! 📋');
@@ -70,11 +78,6 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         <div className="player-order-list">
           {userOrder.map((item, i) => {
             const pair = i < pairs.length ? pairs[i] : null;
-            const streakBroken =
-              pair !== null &&
-              !pair.correct &&
-              i > 0 &&
-              pairs[i - 1].streakAtThisPoint > 0;
             const positionHint = getPositionHint(item, i, correctOrder);
             const hintCorrect = positionHint.startsWith('Correct');
 
@@ -108,7 +111,6 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
                     points={pair.points}
                     itemA={item}
                     itemB={userOrder[i + 1]}
-                    streakBroken={streakBroken}
                   />
                 )}
               </div>
