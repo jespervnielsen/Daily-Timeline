@@ -4,6 +4,7 @@ export interface Item {
   year: number;
   image: string;
   description: string;
+  wikipedia?: string;
 }
 
 export interface PairResult {
