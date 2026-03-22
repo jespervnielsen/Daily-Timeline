@@ -70,6 +70,12 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
             </span>
           )}
         </div>
+        <div className="result-actions">
+          <button className="btn-share" onClick={handleShare}>
+            Share Results 📤
+          </button>
+          <p className="tomorrow-note">Come back tomorrow for a new timeline! 📅</p>
+        </div>
       </div>
 
       {/* ── Player Order with Pair Feedback ── */}
@@ -155,13 +161,6 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
         </div>
       </section>
 
-      {/* ── Actions ── */}
-      <div className="result-actions">
-        <button className="btn-share" onClick={handleShare}>
-          Share Results 📤
-        </button>
-        <p className="tomorrow-note">Come back tomorrow for a new puzzle! 📅</p>
-      </div>
     </div>
   );
 }
