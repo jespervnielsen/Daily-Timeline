@@ -3,7 +3,6 @@ import type { Item } from '../types';
 interface PairResultRowProps {
   isCorrect: boolean;
   streak: number;
-  points: number;
   itemA: Item;
   itemB: Item;
 }
@@ -11,7 +10,6 @@ interface PairResultRowProps {
 export default function PairResultRow({
   isCorrect,
   streak,
-  points,
   itemA,
   itemB,
 }: PairResultRowProps) {
@@ -24,13 +22,12 @@ export default function PairResultRow({
       'Correct! ✓';
     return (
       <div className="pair-result-row pair-result-row--correct">
-        <span className="pair-result-points">+{points}</span>
         <span className="pair-result-label">{streakLabel}</span>
       </div>
     );
   }
 
-  // When isCorrect is false, itemA.year > itemB.year by the scoring logic
+  // When isCorrect is false, itemA should come after itemB in the correct order
   const explanation = `${itemB.title} should come before ${itemA.title}`;
 
   return (
