@@ -122,10 +122,6 @@ export default function ResultScreen({ result, date }: ResultScreenProps) {
             );
           })}
         </div>
-
-        <div className="scoring-note">
-          💡 <strong>How scoring works:</strong> Pairs in the right order earn streak bonuses, and each item earns extra points for landing in or near its correct position.
-        </div>
       </section>
 
       {/* ── Correct Timeline (Reference) ── */}
