@@ -123,6 +123,8 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                   <PairResultRow
                     isCorrect={pair.correct}
                     streak={pair.streakAtThisPoint}
+                    itemATitle={pair.itemA.title}
+                    itemBTitle={pair.itemB.title}
                   />
                 )}
               </div>
