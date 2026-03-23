@@ -550,6 +550,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
   background: rgba(248,81,73,0.08);
   border: 1px solid rgba(248,81,73,0.2);
   color: var(--red);
+  align-items: flex-start;
 }
 
 .pair-result-fire {
@@ -566,7 +567,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .pair-result-label {
   font-size: 0.78rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: inherit;
 }
 
 .pair-result-row--correct .pair-result-label {
@@ -583,25 +584,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .pair-result-icon {
   font-size: 0.9rem;
   line-height: 1;
-}
-
-.pair-result-wrong-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.pair-result-streak-broken {
-  font-size: 0.72rem;
-  color: var(--yellow);
-  font-weight: 600;
-}
-
-.pair-result-explanation {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  font-weight: 400;
-  font-style: italic;
 }
 
 /* ─── Correct Timeline Section ───────────────────── */

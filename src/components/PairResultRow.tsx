@@ -1,17 +1,15 @@
-import type { Item } from '../types';
-
 interface PairResultRowProps {
   isCorrect: boolean;
   streak: number;
-  itemA: Item;
-  itemB: Item;
+  itemATitle?: string;
+  itemBTitle?: string;
 }
 
 export default function PairResultRow({
   isCorrect,
   streak,
-  itemA,
-  itemB,
+  itemATitle,
+  itemBTitle,
 }: PairResultRowProps) {
   if (isCorrect) {
     // streak is always ≥ 1 for correct pairs (incremented before recording)
@@ -19,21 +17,21 @@ export default function PairResultRow({
     return (
       <div className="pair-result-row pair-result-row--correct">
         <span className="pair-result-fire">{fireEmojis}</span>
-        <span className="pair-result-correct-text">Correct order</span>
+        <span className="pair-result-correct-text">Right order</span>
       </div>
     );
   }
 
-  // When isCorrect is false, itemA should come after itemB in the correct order
-  const explanation = `${itemB.title} should come before ${itemA.title}`;
-
   return (
     <div className="pair-result-row pair-result-row--wrong">
       <span className="pair-result-icon">❌</span>
-      <div className="pair-result-wrong-info">
+      {itemATitle && itemBTitle ? (
+        <span className="pair-result-label">
+          <em>{itemBTitle}</em> should come before <em>{itemATitle}</em>
+        </span>
+      ) : (
         <span className="pair-result-label">Wrong order</span>
-        <span className="pair-result-explanation">{explanation}</span>
-      </div>
+      )}
     </div>
   );
 }
