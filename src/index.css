@@ -308,11 +308,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
   margin-bottom: 4px;
 }
 
-.card-hint {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-}
-
 .card-drag-handle {
   position: absolute;
   bottom: 8px;
