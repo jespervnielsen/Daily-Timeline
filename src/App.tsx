@@ -108,7 +108,7 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>A new puzzle every day · Made with ❤️</p>
+        <p>A new timeline every day</p>
       </footer>
     </div>
   );
