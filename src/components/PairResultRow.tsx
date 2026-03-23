@@ -1,15 +1,15 @@
 interface PairResultRowProps {
   isCorrect: boolean;
   streak: number;
-  itemATitle?: string;
-  itemBTitle?: string;
+  earlierItemTitle?: string;
+  laterItemTitle?: string;
 }
 
 export default function PairResultRow({
   isCorrect,
   streak,
-  itemATitle,
-  itemBTitle,
+  earlierItemTitle,
+  laterItemTitle,
 }: PairResultRowProps) {
   if (isCorrect) {
     // streak is always ≥ 1 for correct pairs (incremented before recording)
@@ -25,9 +25,9 @@ export default function PairResultRow({
   return (
     <div className="pair-result-row pair-result-row--wrong">
       <span className="pair-result-icon">❌</span>
-      {itemATitle && itemBTitle ? (
+      {earlierItemTitle && laterItemTitle ? (
         <span className="pair-result-label">
-          <em>{itemBTitle}</em> should come before <em>{itemATitle}</em>
+          <em>{earlierItemTitle}</em> should come before <em>{laterItemTitle}</em>
         </span>
       ) : (
         <span className="pair-result-label">Wrong order</span>
