@@ -99,6 +99,17 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
             const positionHint = getPositionHint(item, i, correctOrder);
             const hintCorrect = positionHint.startsWith('Perfect');
 
+            let earlierTitle: string | undefined;
+            let laterTitle: string | undefined;
+            if (pair) {
+              const posA = correctOrder.findIndex((c) => c.id === pair.itemA.id);
+              const posB = correctOrder.findIndex((c) => c.id === pair.itemB.id);
+              [earlierTitle, laterTitle] =
+                posA <= posB
+                  ? [pair.itemA.title, pair.itemB.title]
+                  : [pair.itemB.title, pair.itemA.title];
+            }
+
             return (
               <div key={item.id} className="player-order-group">
                 {/* Card */}
@@ -123,8 +134,8 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                   <PairResultRow
                     isCorrect={pair.correct}
                     streak={pair.streakAtThisPoint}
-                    itemATitle={pair.itemA.title}
-                    itemBTitle={pair.itemB.title}
+                    earlierItemTitle={earlierTitle}
+                    laterItemTitle={laterTitle}
                   />
                 )}
               </div>
