@@ -187,12 +187,12 @@ button { cursor: pointer; border: none; font-family: inherit; }
   /* Horizontal (desktop): vertical band overlapping both neighbors */
   .drop-zone {
     height: auto;
-    width: 36px;
+    width: 56px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: -16px;
-    margin-right: -16px;
-    flex: 0 0 36px;
+    margin-left: -24px;
+    margin-right: -24px;
+    flex: 0 0 56px;
     flex-direction: column;
   }
 }
