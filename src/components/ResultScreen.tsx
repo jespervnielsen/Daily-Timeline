@@ -24,8 +24,8 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
   const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
   const diff = correctIndex - userIndex;
   if (diff === 0) return 'Perfect placement ✓';
-  if (diff > 0) return `${diff} place${diff > 1 ? 's' : ''} too early`;
-  return `${Math.abs(diff)} place${Math.abs(diff) > 1 ? 's' : ''} too late`;
+  if (diff > 0) return `${diff} place${diff > 1 ? 's' : ''} too late`;
+  return `${Math.abs(diff)} place${Math.abs(diff) > 1 ? 's' : ''} too early`;
 }
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
