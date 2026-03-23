@@ -27,20 +27,9 @@ export default function PairResultRow({
   }
 
   // The user placed these two items in the correct relative order but they are
-  // not adjacent in the correct answer – another item belongs between them.
+  // not adjacent in the correct answer – no additional hint is shown.
   if (inCorrectOrder) {
-    return (
-      <div className="pair-result-row pair-result-row--partial">
-        <span className="pair-result-icon" aria-label="warning">⚠️</span>
-        {earlierItemTitle && laterItemTitle ? (
-          <span className="pair-result-label">
-            Right order, but an item is missing between <em>{earlierItemTitle}</em> and <em>{laterItemTitle}</em>
-          </span>
-        ) : (
-          <span className="pair-result-label">Right order, but not consecutive</span>
-        )}
-      </div>
-    );
+    return null;
   }
 
   return (
