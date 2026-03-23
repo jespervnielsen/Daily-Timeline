@@ -21,7 +21,7 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   for (let i = 0; i < n - 1; i++) {
     const correctPosA = correctPositionMap.get(userOrder[i].id)!;
     const correctPosB = correctPositionMap.get(userOrder[i + 1].id)!;
-    const correct = correctPosA < correctPosB;
+    const correct = correctPosB === correctPosA + 1;
     if (correct) {
       streak += 1;
       pairScore += 2 + streak * 0.5;
