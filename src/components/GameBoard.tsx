@@ -77,6 +77,31 @@ export default function GameBoard({ items, onSubmit }: GameBoardProps) {
     setActiveDropZone(null);
   };
 
+  // Compute the drop zone index from cursor position relative to the card's midpoint.
+  const getDropZoneFromCardEvent = (e: React.DragEvent, cardIndex: number): number => {
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const isVertical = window.innerWidth < 640;
+    return isVertical
+      ? (e.clientY < rect.top + rect.height / 2 ? cardIndex : cardIndex + 1)
+      : (e.clientX < rect.left + rect.width / 2 ? cardIndex : cardIndex + 1);
+  };
+
+  // Update active drop zone while dragging over a card based on which half the cursor is in.
+  const onCardDragOver = (e: React.DragEvent, cardIndex: number) => {
+    e.preventDefault();
+    setActiveDropZone(getDropZoneFromCardEvent(e, cardIndex));
+  };
+
+  // Handle a drop event that lands on the card body (not the drop zone element).
+  const onCardDrop = (e: React.DragEvent, cardIndex: number) => {
+    e.preventDefault();
+    if (draggingIndex !== null) {
+      reorderByDropZone(draggingIndex, getDropZoneFromCardEvent(e, cardIndex));
+    }
+    setDraggingIndex(null);
+    setActiveDropZone(null);
+  };
+
   // ── Touch drag & drop ─────────────────────────────────
   const getCardElements = () =>
     Array.from(document.querySelectorAll<HTMLElement>('.card'));
@@ -192,6 +217,8 @@ export default function GameBoard({ items, onSubmit }: GameBoardProps) {
               draggable
               onDragStart={() => onDragStart(i)}
               onDragEnd={onDragEnd}
+              onDragOver={(e) => onCardDragOver(e, i)}
+              onDrop={(e) => onCardDrop(e, i)}
               onTouchStart={(e) => onTouchStart(e, i)}
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
