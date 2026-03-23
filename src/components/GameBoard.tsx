@@ -232,7 +232,6 @@ export default function GameBoard({ items, onSubmit }: GameBoardProps) {
               />
               <div className="card-body">
                 <h3 className="card-title">{item.title}</h3>
-                <p className="card-hint">🕰️ When did this happen?</p>
               </div>
               <div className="card-drag-handle" aria-hidden="true">⠿</div>
             </div>
