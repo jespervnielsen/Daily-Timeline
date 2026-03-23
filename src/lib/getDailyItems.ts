@@ -16,7 +16,7 @@ function seededRandom(seed: number): () => number {
 }
 
 function selectFiveUniqueYears(rng: () => number): Item[] {
-  const shuffled = [...allItems];
+  const shuffled = allItems.filter(item => !item.image_broken);
   // Fisher-Yates shuffle with seeded rng
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
