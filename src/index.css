@@ -171,6 +171,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .drop-zone {
   position: relative;
   z-index: 10;
+  pointer-events: none;
   /* Vertical (mobile): horizontal band overlapping both neighbors */
   height: 96px;
   margin-top: -46px;
@@ -292,7 +293,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 }
 
 @media (min-width: 640px) {
-  .card-image { height: 120px; }
+  .card-image { height: 200px; }
 }
 
 .card-body {
