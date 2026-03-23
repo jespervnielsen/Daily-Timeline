@@ -5,6 +5,8 @@ export interface Item {
   image: string;
   description: string;
   wikipedia?: string;
+  /** Set to true by the enrich script when the image URL fails validation. */
+  image_broken?: boolean;
 }
 
 export interface PairResult {
