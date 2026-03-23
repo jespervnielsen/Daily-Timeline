@@ -585,25 +585,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
   line-height: 1;
 }
 
-.pair-result-wrong-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.pair-result-streak-broken {
-  font-size: 0.72rem;
-  color: var(--yellow);
-  font-weight: 600;
-}
-
-.pair-result-explanation {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  font-weight: 400;
-  font-style: italic;
-}
-
 /* ─── Correct Timeline Section ───────────────────── */
 .correct-timeline-section {
   max-width: 480px;

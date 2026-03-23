@@ -23,7 +23,7 @@ function formatYear(year: number): string {
 function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): string {
   const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
   const diff = correctIndex - userIndex;
-  if (diff === 0) return 'Correct position ✓';
+  if (diff === 0) return 'Perfect placement ✓';
   if (diff > 0) return `${diff} place${diff > 1 ? 's' : ''} too early`;
   return `${Math.abs(diff)} place${Math.abs(diff) > 1 ? 's' : ''} too late`;
 }
@@ -97,7 +97,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
           {userOrder.map((item, i) => {
             const pair = i < pairs.length ? pairs[i] : null;
             const positionHint = getPositionHint(item, i, correctOrder);
-            const hintCorrect = positionHint.startsWith('Correct');
+            const hintCorrect = positionHint.startsWith('Perfect');
 
             return (
               <div key={item.id} className="player-order-group">
@@ -123,8 +123,6 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                   <PairResultRow
                     isCorrect={pair.correct}
                     streak={pair.streakAtThisPoint}
-                    itemA={item}
-                    itemB={userOrder[i + 1]}
                   />
                 )}
               </div>
