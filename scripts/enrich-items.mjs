@@ -12,6 +12,9 @@
  *     are accepted from this source; non-free /wikipedia/en/ images are
  *     skipped to avoid broken hotlinks.
  *  3. Keep the existing image URL when neither source yields a result.
+ *  4. Validate the final URL with an HTTP HEAD request.  Items whose URL
+ *     returns a non-2xx response are flagged with `"image_broken": true`
+ *     in items.json so that broken images are easy to spot and count.
  *
  * Usage:
  *   node scripts/enrich-items.mjs
@@ -179,12 +182,35 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/**
+ * Validate that an image URL is accessible via an HTTP HEAD request.
+ *
+ * Returns true when the server responds with a 2xx status code.
+ *
+ * @param {string|undefined} url
+ * @returns {Promise<boolean>}
+ */
+async function validateImageUrl(url) {
+  if (!url) return false;
+  try {
+    const response = await fetch(url, {
+      method: 'HEAD',
+      headers: { 'User-Agent': USER_AGENT },
+    });
+    return response.ok;
+  } catch (err) {
+    console.warn(`  Image validation error for "${url}": ${err.message}`);
+    return false;
+  }
+}
+
 async function main() {
   const items = JSON.parse(readFileSync(ITEMS_PATH, 'utf-8'));
   console.log(`Enriching ${items.length} items…\n`);
 
   let updated = 0;
   let skipped = 0;
+  let broken = 0;
 
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
@@ -207,11 +233,20 @@ async function main() {
 
     if (imageUrl) {
       item.image = imageUrl;
-      console.log('✓');
       updated++;
     } else {
-      console.log('– kept existing');
       skipped++;
+    }
+
+    // 4. Validate the final image URL with an HTTP HEAD request.
+    const isValid = await validateImageUrl(item.image);
+    if (isValid) {
+      delete item.image_broken;
+      console.log(imageUrl ? '✓' : '– kept existing');
+    } else {
+      item.image_broken = true;
+      broken++;
+      console.log(imageUrl ? '✗ saved but URL is broken!' : '✗ existing URL is broken');
     }
 
     if (i < items.length - 1) {
@@ -221,7 +256,14 @@ async function main() {
 
   writeFileSync(ITEMS_PATH, JSON.stringify(items, null, 2) + '\n');
 
-  console.log(`\nDone. Updated: ${updated}, Kept existing: ${skipped}`);
+  console.log(`\nDone. Updated: ${updated}, Kept existing: ${skipped}, Broken: ${broken}`);
+  if (broken > 0) {
+    console.log(
+      `\n⚠️  ${broken} item(s) have broken image URLs (marked with "image_broken": true in items.json).`,
+    );
+    const brokenIds = items.filter((item) => item.image_broken).map((item) => item.id);
+    console.log(`   Broken IDs: ${brokenIds.join(', ')}`);
+  }
   console.log(`Saved to ${ITEMS_PATH}`);
 }
 
