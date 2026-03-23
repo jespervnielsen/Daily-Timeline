@@ -223,7 +223,6 @@ export default function GameBoard({ items, onSubmit }: GameBoardProps) {
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
             >
-              <div className="card-rank">{i + 1}</div>
               <WikimediaImage
                 className="card-image"
                 image={item.image}
