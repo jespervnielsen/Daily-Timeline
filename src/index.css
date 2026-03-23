@@ -198,18 +198,21 @@ button { cursor: pointer; border: none; font-family: inherit; }
 }
 
 .drop-zone--dragging {
-  background: rgba(88, 166, 255, 0.04);
+  background: rgba(88, 166, 255, 0.08);
+  outline: 1px dashed rgba(88, 166, 255, 0.35);
+  outline-offset: -3px;
 }
 
 .drop-zone--active {
-  background: rgba(88, 166, 255, 0.18);
-  box-shadow: 0 0 0 1px rgba(88, 166, 255, 0.4) inset;
+  background: rgba(88, 166, 255, 0.28);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.7) inset;
+  outline: none;
 }
 
 /* The thin accent line shown inside an active drop zone */
 .drop-zone-indicator {
-  width: 60%;
-  height: 3px;
+  width: 70%;
+  height: 4px;
   border-radius: 2px;
   background: var(--accent);
   opacity: 0;
@@ -220,9 +223,20 @@ button { cursor: pointer; border: none; font-family: inherit; }
 
 @media (min-width: 640px) {
   .drop-zone-indicator {
-    width: 3px;
-    height: 60%;
+    width: 4px;
+    height: 70%;
     transform: scaleY(0.4);
+  }
+}
+
+.drop-zone--dragging .drop-zone-indicator {
+  opacity: 0.35;
+  transform: scaleX(0.6);
+}
+
+@media (min-width: 640px) {
+  .drop-zone--dragging .drop-zone-indicator {
+    transform: scaleY(0.6);
   }
 }
 
