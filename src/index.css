@@ -150,14 +150,90 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .cards-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
 @media (min-width: 640px) {
   .cards-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 12px;
+    gap: 0;
+  }
+}
+
+/* ─── Drop Zone Group ────────────────────────────── */
+/* Wrapper that holds one card + the drop zone after it */
+.drop-zone-group {
+  display: contents;
+}
+
+/* ─── Drop Zone ──────────────────────────────────── */
+.drop-zone {
+  position: relative;
+  z-index: 10;
+  /* Vertical (mobile): horizontal band overlapping both neighbors */
+  height: 36px;
+  margin-top: -16px;
+  margin-bottom: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  transition: background-color var(--transition);
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  /* Horizontal (desktop): vertical band overlapping both neighbors */
+  .drop-zone {
+    height: auto;
+    width: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    flex: 0 0 36px;
+    flex-direction: column;
+  }
+}
+
+.drop-zone--dragging {
+  background: rgba(88, 166, 255, 0.04);
+}
+
+.drop-zone--active {
+  background: rgba(88, 166, 255, 0.18);
+  box-shadow: 0 0 0 1px rgba(88, 166, 255, 0.4) inset;
+}
+
+/* The thin accent line shown inside an active drop zone */
+.drop-zone-indicator {
+  width: 60%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transform: scaleX(0.4);
+  transition: opacity var(--transition), transform var(--transition);
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .drop-zone-indicator {
+    width: 3px;
+    height: 60%;
+    transform: scaleY(0.4);
+  }
+}
+
+.drop-zone--active .drop-zone-indicator {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+@media (min-width: 640px) {
+  .drop-zone--active .drop-zone-indicator {
+    transform: scaleY(1);
   }
 }
 
@@ -191,13 +267,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
   opacity: 0.4;
   border-color: var(--accent);
   transform: scale(0.97);
-}
-
-.card.drag-over {
-  border-color: var(--accent);
-  background: var(--bg-card-hover);
-  box-shadow: 0 0 0 2px var(--accent), 0 8px 32px rgba(88,166,255,0.25);
-  transform: scale(1.02);
 }
 
 .card-rank {
