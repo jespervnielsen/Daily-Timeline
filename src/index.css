@@ -172,9 +172,9 @@ button { cursor: pointer; border: none; font-family: inherit; }
   position: relative;
   z-index: 10;
   /* Vertical (mobile): horizontal band overlapping both neighbors */
-  height: 36px;
-  margin-top: -16px;
-  margin-bottom: -16px;
+  height: 96px;
+  margin-top: -46px;
+  margin-bottom: -46px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,12 +187,12 @@ button { cursor: pointer; border: none; font-family: inherit; }
   /* Horizontal (desktop): vertical band overlapping both neighbors */
   .drop-zone {
     height: auto;
-    width: 56px;
+    width: 96px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: -24px;
-    margin-right: -24px;
-    flex: 0 0 56px;
+    margin-left: -46px;
+    margin-right: -46px;
+    flex: 0 0 96px;
     flex-direction: column;
   }
 }
