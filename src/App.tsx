@@ -100,7 +100,7 @@ export default function App() {
 
       <main className="app-main">
         {gameState === 'playing' && (
-          <GameBoard items={currentItems} onSubmit={handleSubmit} />
+          <GameBoard key={currentItems.map((i) => i.id).join(',')} items={currentItems} onSubmit={handleSubmit} />
         )}
         {gameState === 'finished' && result && (
           <ResultScreen result={result} date={today} isRandom={isRandom} />
