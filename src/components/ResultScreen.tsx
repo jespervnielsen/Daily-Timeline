@@ -101,9 +101,13 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
 
             let earlierTitle: string | undefined;
             let laterTitle: string | undefined;
+            let pairInCorrectOrder: boolean | undefined;
             if (pair) {
               const posA = correctOrder.findIndex((c) => c.id === pair.itemA.id);
               const posB = correctOrder.findIndex((c) => c.id === pair.itemB.id);
+              // inCorrectOrder: user placed itemA before itemB, which IS the right
+              // relative order – even if they are not consecutive in the answer.
+              pairInCorrectOrder = posA < posB;
               [earlierTitle, laterTitle] =
                 posA <= posB
                   ? [pair.itemA.title, pair.itemB.title]
@@ -136,6 +140,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                     streak={pair.streakAtThisPoint}
                     earlierItemTitle={earlierTitle}
                     laterItemTitle={laterTitle}
+                    inCorrectOrder={pairInCorrectOrder}
                   />
                 )}
               </div>

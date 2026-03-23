@@ -553,6 +553,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
   align-items: flex-start;
 }
 
+.pair-result-row--partial {
+  background: rgba(210,153,34,0.08);
+  border: 1px solid rgba(210,153,34,0.25);
+  color: var(--yellow);
+  align-items: flex-start;
+}
+
 .pair-result-fire {
   font-size: 0.9rem;
   line-height: 1;
