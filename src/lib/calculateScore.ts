@@ -3,35 +3,33 @@ import type { Item, PairResult, ScoreResult } from '../types';
 function getPositionPoints(diff: number): number {
   if (diff === 0) return 2;
   if (diff === 1) return 1.5;
-  return 1;
+  return 0;
 }
 
 export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreResult {
-  // Build a map from item id to its position in the user's submitted order
-  const userPositionMap = new Map<string, number>();
-  userOrder.forEach((item, idx) => userPositionMap.set(item.id, idx));
-
-  // Build a map from item id to its correct position (used for position scoring)
+  // Build a map from item id to its position in the correct order (used for pair and position scoring)
   const correctPositionMap = new Map<string, number>();
   correctOrder.forEach((item, idx) => correctPositionMap.set(item.id, idx));
 
   const n = correctOrder.length;
 
   // 1. Pair / Combo Scoring – rewards streaks of correctly ordered consecutive pairs
-  //    Pairs are defined by the correct timeline (source of truth), not the user's order.
+  //    Pairs are defined by the user's submitted order (source of truth for feedback rows).
+  //    A pair is correct when the two consecutive user-order items are also consecutive
+  //    in the correct timeline, matching exactly what the UI feedback rows display.
   let streak = 0;
   let pairScore = 0;
   const pairs: PairResult[] = [];
 
   for (let i = 0; i < n - 1; i++) {
-    const itemA = correctOrder[i];
-    const itemB = correctOrder[i + 1];
-    const userPosA = userPositionMap.get(itemA.id)!;
-    const userPosB = userPositionMap.get(itemB.id)!;
-    const correct = userPosA < userPosB;
+    const itemA = userOrder[i];
+    const itemB = userOrder[i + 1];
+    const correctPosA = correctPositionMap.get(itemA.id)!;
+    const correctPosB = correctPositionMap.get(itemB.id)!;
+    const correct = correctPosB === correctPosA + 1;
     if (correct) {
+      pairScore += 2 + streak * 0.5;
       streak += 1;
-      pairScore += 1.5 + streak * 0.5;
     } else {
       streak = 0;
     }
@@ -43,7 +41,8 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
     });
   }
 
-  // 2. Position Scoring – adds fairness and granularity
+  // 2. Position Scoring – exact placement earns full points, 1 off earns partial;
+  //    2+ off earns nothing (keeps minimum score anchored at 0)
   let positionScore = 0;
   userOrder.forEach((item, userIdx) => {
     const correctIdx = correctPositionMap.get(item.id)!;
@@ -54,12 +53,12 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   const rawScore = pairScore + positionScore;
 
   // 4. Theoretical maximum: all pairs correct (growing streak) + all positions correct
-  // maxPairScore = sum of (1.5 + k*0.5) for k=1..n-1 = 1.5(n-1) + 0.25n(n-1)
+  // maxPairScore = sum of (2 + k*0.5) for k=0..n-2 = 1.5(n-1) + 0.25n(n-1)
   const maxPairScore = 1.5 * (n - 1) + 0.25 * n * (n - 1);
   const maxPositionScore = 2 * n;
   const maxRaw = maxPairScore + maxPositionScore;
 
-  // 5. Normalize to 0–100; rawScore is always > 0 (position always contributes)
+  // 5. Normalize to 0–100; minimum is 0 (no correct pairs, all positions 2+ off)
   const score = Math.round((rawScore / maxRaw) * 100);
 
   return { score, pairs, rawScore, maxScore: maxRaw, userOrder, correctOrder };
