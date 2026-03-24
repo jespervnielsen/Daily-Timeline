@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { ScoreResult, Item } from '../types';
 import PairResultRow from './PairResultRow';
 import WikimediaImage from './WikimediaImage';
@@ -100,6 +101,24 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
             const positionHint = getPositionHint(item, i, correctOrder);
             const hintCorrect = positionHint.startsWith('Perfect');
 
+            // Compute the pair between this item and the next in the user's order
+            let pairRow: ReactNode = null;
+            if (i < userOrder.length - 1) {
+              const nextItem = userOrder[i + 1];
+              const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
+              const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
+              const isCorrectPair = correctPosA < correctPosB;
+              const earlierItemTitle = isCorrectPair ? item.title : nextItem.title;
+              const laterItemTitle = isCorrectPair ? nextItem.title : item.title;
+              pairRow = (
+                <PairResultRow
+                  isCorrect={isCorrectPair}
+                  earlierItemTitle={earlierItemTitle}
+                  laterItemTitle={laterItemTitle}
+                />
+              );
+            }
+
             return (
               <div key={item.id} className="player-order-group">
                 {/* Card */}
@@ -118,6 +137,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                     </span>
                   </div>
                 </div>
+                {pairRow}
               </div>
             );
           })}
@@ -156,11 +176,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                 </div>
               </div>
               {i < correctOrder.length - 1 && (
-                <PairResultRow
-                  isCorrect={pairs[i].correct}
-                  earlierItemTitle={pairs[i].itemA.title}
-                  laterItemTitle={pairs[i].itemB.title}
-                />
+                <div className="correct-timeline-connector" />
               )}
             </div>
           ))}
