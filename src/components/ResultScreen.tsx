@@ -27,7 +27,7 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
   if (diff === 0) return 'Perfect placement ✓';
   if (diff === 1) return '1 place too early';
   if (diff === -1) return '1 place too late';
-  return '2+ places off';
+  return '';
 }
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
