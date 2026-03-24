@@ -593,7 +593,49 @@ button { cursor: pointer; border: none; font-family: inherit; }
   line-height: 1;
 }
 
-/* ─── Correct Timeline Section ───────────────────── */
+.result-card-correct-pos {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.result-card-correct-pos.hint-correct {
+  color: var(--green);
+}
+
+/* ─── Correct Timeline Toggle ────────────────────── */
+.correct-timeline-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 0;
+}
+
+.correct-timeline-toggle:hover {
+  background: var(--bg-card-hover);
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.correct-timeline-toggle-arrow {
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
+.correct-timeline-section .correct-timeline-list {
+  margin-top: 12px;
+}
 .correct-timeline-section {
   max-width: 480px;
   margin: 0 auto 40px;

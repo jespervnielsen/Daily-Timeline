@@ -1,14 +1,8 @@
 interface PairResultRowProps {
   isCorrect: boolean;
-  earlierItemTitle?: string;
-  laterItemTitle?: string;
 }
 
-export default function PairResultRow({
-  isCorrect,
-  earlierItemTitle,
-  laterItemTitle,
-}: PairResultRowProps) {
+export default function PairResultRow({ isCorrect }: PairResultRowProps) {
   if (isCorrect) {
     return (
       <div className="pair-result-row pair-result-row--correct">
@@ -21,13 +15,7 @@ export default function PairResultRow({
   return (
     <div className="pair-result-row pair-result-row--wrong">
       <span className="pair-result-icon">❌</span>
-      {earlierItemTitle && laterItemTitle ? (
-        <span className="pair-result-label">
-          <em>{earlierItemTitle}</em> should come before <em>{laterItemTitle}</em>
-        </span>
-      ) : (
-        <span className="pair-result-label">Wrong order</span>
-      )}
+      <span className="pair-result-label">Out of order</span>
     </div>
   );
 }
