@@ -611,6 +611,14 @@ button { cursor: pointer; border: none; font-family: inherit; }
   align-items: center;
 }
 
+.correct-timeline-connector {
+  width: 2px;
+  height: 16px;
+  background: rgba(63,185,80,0.3);
+  border-radius: 1px;
+  margin: 2px 0;
+}
+
 .correct-timeline-item {
   display: flex;
   align-items: center;
