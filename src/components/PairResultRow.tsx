@@ -1,6 +1,5 @@
 interface PairResultRowProps {
   isCorrect: boolean;
-  streak: number;
   earlierItemTitle?: string;
   laterItemTitle?: string;
   /** True when the user placed these two items in the correct relative order,
@@ -10,26 +9,17 @@ interface PairResultRowProps {
 
 export default function PairResultRow({
   isCorrect,
-  streak,
   earlierItemTitle,
   laterItemTitle,
   inCorrectOrder,
 }: PairResultRowProps) {
-  if (isCorrect) {
-    // streak is always ≥ 1 for correct pairs (incremented before recording)
-    const fireEmojis = '🔥'.repeat(Math.max(1, streak));
+  if (isCorrect || inCorrectOrder) {
     return (
       <div className="pair-result-row pair-result-row--correct">
-        <span className="pair-result-fire">{fireEmojis}</span>
-        <span className="pair-result-correct-text">Right order</span>
+        <span className="pair-result-icon">✓</span>
+        <span className="pair-result-correct-text">In order</span>
       </div>
     );
-  }
-
-  // The user placed these two items in the correct relative order but they are
-  // not adjacent in the correct answer – no additional hint is shown.
-  if (inCorrectOrder) {
-    return null;
   }
 
   return (

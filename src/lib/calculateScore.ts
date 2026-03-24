@@ -24,7 +24,7 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
     const correct = correctPosB === correctPosA + 1;
     if (correct) {
       streak += 1;
-      pairScore += 2 + streak * 0.5;
+      pairScore += 1.5 + streak * 0.5;
     } else {
       streak = 0;
     }
@@ -47,21 +47,13 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
   const rawScore = pairScore + positionScore;
 
   // 4. Theoretical maximum: all pairs correct (growing streak) + all positions correct
-  // maxPairScore = sum of (2 + k*0.5) for k=1..n-1 = 2(n-1) + (n-1)*n/4
-  const maxPairScore = 2 * (n - 1) + (n - 1) * n / 4;
+  // maxPairScore = sum of (1.5 + k*0.5) for k=1..n-1 = 1.5(n-1) + 0.25n(n-1)
+  const maxPairScore = 1.5 * (n - 1) + 0.25 * n * (n - 1);
   const maxPositionScore = 2 * n;
   const maxRaw = maxPairScore + maxPositionScore;
 
-  // 5. Minimum achievable raw score: reversed order (all pairs wrong, pairScore = 0)
-  //    Position score for reversed permutation where diff = |i - (n-1-i)|
-  let minPositionScore = 0;
-  for (let i = 0; i < n; i++) {
-    minPositionScore += getPositionPoints(Math.abs(i - (n - 1 - i)));
-  }
-  const minRaw = minPositionScore; // pairScore = 0 for fully reversed order
-
-  // 6. Normalize to 0–100 anchored to the true achievable range
-  const score = Math.max(0, Math.round(((rawScore - minRaw) / (maxRaw - minRaw)) * 100));
+  // 5. Normalize to 0–100; rawScore is always > 0 (position always contributes)
+  const score = Math.round((rawScore / maxRaw) * 100);
 
   return { score, pairs, rawScore, maxScore: maxRaw, userOrder, correctOrder };
 }
