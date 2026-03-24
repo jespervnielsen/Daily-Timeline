@@ -398,8 +398,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
   margin-top: 8px;
 }
 
-.score-pairs-badge,
-.score-streak-badge {
+.score-pairs-badge {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -407,18 +406,9 @@ button { cursor: pointer; border: none; font-family: inherit; }
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 20px;
-}
-
-.score-pairs-badge {
   background: rgba(63,185,80,0.15);
   color: var(--green);
   border: 1px solid rgba(63,185,80,0.3);
-}
-
-.score-streak-badge {
-  background: rgba(210,153,34,0.15);
-  color: var(--yellow);
-  border: 1px solid rgba(210,153,34,0.3);
 }
 
 /* ─── Section headings ───────────────────────────── */
