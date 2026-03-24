@@ -76,9 +76,17 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
         <div className="score-tier">{tier}</div>
         <div className="score-stats">
           <span className="score-pairs-badge">
+            <span className="score-pairs-dots">
+              {pairs.map((p, i) => (
+                <span
+                  key={i}
+                  className={`score-pairs-dot ${p.correct ? 'score-pairs-dot--correct' : 'score-pairs-dot--wrong'}`}
+                  aria-label={`Pair ${i + 1}: ${p.correct ? 'correct' : 'incorrect'}`}
+                />
+              ))}
+            </span>
             {correctCount}/{pairs.length} pairs correct
           </span>
-
         </div>
         <div className="result-actions">
           <button className="btn-share" onClick={handleShare}>
@@ -101,11 +109,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               // Compute the pair between this item and the next in the user's order
               let pairRow: ReactNode = null;
               if (i < userOrder.length - 1) {
-                const nextItem = userOrder[i + 1];
-                const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
-                const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
-                const isCorrectPair = correctPosB === correctPosA + 1;
-                pairRow = <PairResultRow isCorrect={isCorrectPair} />;
+                pairRow = <PairResultRow isCorrect={pairs[i].correct} pairIndex={i + 1} />;
               }
 
               const correctPosition = correctOrder.findIndex((c) => c.id === item.id);

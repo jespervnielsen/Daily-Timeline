@@ -411,6 +411,28 @@ button { cursor: pointer; border: none; font-family: inherit; }
   border: 1px solid rgba(63,185,80,0.3);
 }
 
+.score-pairs-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-right: 4px;
+}
+
+.score-pairs-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.score-pairs-dot--correct {
+  background: var(--green);
+}
+
+.score-pairs-dot--wrong {
+  background: var(--red);
+}
+
 /* ─── Section headings ───────────────────────────── */
 .section-heading {
   font-size: 0.85rem;
@@ -595,6 +617,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .pair-result-icon {
   font-size: 0.9rem;
   line-height: 1;
+}
+
+.pair-result-number {
+  font-size: 0.68rem;
+  font-weight: 700;
+  opacity: 0.55;
+  margin-right: 2px;
 }
 
 .result-card-correct-pos {
