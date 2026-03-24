@@ -31,6 +31,7 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
   const { score, pairs, userOrder, correctOrder } = result;
+
   const tier = getTierLabel(score);
   const correctCount = pairs.filter((p) => p.correct).length;
   const maxStreak = pairs.reduce((max, p) => Math.max(max, p.streakAtThisPoint), 0);
@@ -91,29 +92,13 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
         </div>
       </div>
 
-      {/* ── Player Order with Pair Feedback ── */}
+      {/* ── Player Order with Position Hints ── */}
       <section className="player-order-section">
         <h2 className="section-heading your-order-heading">Your Order</h2>
         <div className="player-order-list">
           {userOrder.map((item, i) => {
-            const pair = i < pairs.length ? pairs[i] : null;
             const positionHint = getPositionHint(item, i, correctOrder);
             const hintCorrect = positionHint.startsWith('Perfect');
-
-            let earlierTitle: string | undefined;
-            let laterTitle: string | undefined;
-            let pairInCorrectOrder: boolean | undefined;
-            if (pair) {
-              const posA = correctOrder.findIndex((c) => c.id === pair.itemA.id);
-              const posB = correctOrder.findIndex((c) => c.id === pair.itemB.id);
-              // inCorrectOrder: user placed itemA before itemB, which IS the right
-              // relative order – even if they are not consecutive in the answer.
-              pairInCorrectOrder = posA < posB;
-              [earlierTitle, laterTitle] =
-                posA <= posB
-                  ? [pair.itemA.title, pair.itemB.title]
-                  : [pair.itemB.title, pair.itemA.title];
-            }
 
             return (
               <div key={item.id} className="player-order-group">
@@ -133,16 +118,6 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                     </span>
                   </div>
                 </div>
-
-                {/* Pair Result Row (between cards) */}
-                {pair && (
-                  <PairResultRow
-                    isCorrect={pair.correct}
-                    earlierItemTitle={earlierTitle}
-                    laterItemTitle={laterTitle}
-                    inCorrectOrder={pairInCorrectOrder}
-                  />
-                )}
               </div>
             );
           })}
@@ -181,7 +156,11 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                 </div>
               </div>
               {i < correctOrder.length - 1 && (
-                <div className="correct-timeline-arrow">↓</div>
+                <PairResultRow
+                  isCorrect={pairs[i].correct}
+                  earlierItemTitle={pairs[i].itemA.title}
+                  laterItemTitle={pairs[i].itemB.title}
+                />
               )}
             </div>
           ))}

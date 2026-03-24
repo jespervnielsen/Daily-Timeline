@@ -7,21 +7,28 @@ function getPositionPoints(diff: number): number {
 }
 
 export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreResult {
-  // Build a map from item id to its correct position
+  // Build a map from item id to its position in the user's submitted order
+  const userPositionMap = new Map<string, number>();
+  userOrder.forEach((item, idx) => userPositionMap.set(item.id, idx));
+
+  // Build a map from item id to its correct position (used for position scoring)
   const correctPositionMap = new Map<string, number>();
   correctOrder.forEach((item, idx) => correctPositionMap.set(item.id, idx));
 
-  const n = userOrder.length;
+  const n = correctOrder.length;
 
-  // 1. Pair / Combo Scoring – rewards streaks of correct adjacent pairs
+  // 1. Pair / Combo Scoring – rewards streaks of correctly ordered consecutive pairs
+  //    Pairs are defined by the correct timeline (source of truth), not the user's order.
   let streak = 0;
   let pairScore = 0;
   const pairs: PairResult[] = [];
 
   for (let i = 0; i < n - 1; i++) {
-    const correctPosA = correctPositionMap.get(userOrder[i].id)!;
-    const correctPosB = correctPositionMap.get(userOrder[i + 1].id)!;
-    const correct = correctPosB === correctPosA + 1;
+    const itemA = correctOrder[i];
+    const itemB = correctOrder[i + 1];
+    const userPosA = userPositionMap.get(itemA.id)!;
+    const userPosB = userPositionMap.get(itemB.id)!;
+    const correct = userPosA < userPosB;
     if (correct) {
       streak += 1;
       pairScore += 1.5 + streak * 0.5;
@@ -29,8 +36,8 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
       streak = 0;
     }
     pairs.push({
-      itemA: userOrder[i],
-      itemB: userOrder[i + 1],
+      itemA,
+      itemB,
       correct,
       streakAtThisPoint: streak,
     });
