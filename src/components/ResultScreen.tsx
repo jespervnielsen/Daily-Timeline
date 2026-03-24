@@ -108,8 +108,18 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
               const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
               const isCorrectPair = correctPosA < correctPosB;
-              const earlierItemTitle = isCorrectPair ? item.title : nextItem.title;
-              const laterItemTitle = isCorrectPair ? nextItem.title : item.title;
+              // For the wrong-order message always reference what the earlier item
+              // should be directly before (its immediate successor in the correct
+              // order), not the paired item which might be several slots away.
+              // directSuccessor is always defined here: the earlier item must have
+              // a lower correct-order index than the later item, so it can never
+              // be the last element in correctOrder.
+              const earlierCorrectPos = isCorrectPair ? correctPosA : correctPosB;
+              const earlierItem = isCorrectPair ? item : nextItem;
+              const laterItem = isCorrectPair ? nextItem : item;
+              const directSuccessor = correctOrder[earlierCorrectPos + 1];
+              const earlierItemTitle = earlierItem.title;
+              const laterItemTitle = directSuccessor?.title ?? laterItem.title;
               pairRow = (
                 <PairResultRow
                   isCorrect={isCorrectPair}
