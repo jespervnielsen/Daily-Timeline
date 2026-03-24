@@ -109,7 +109,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                 const nextItem = userOrder[i + 1];
                 const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
                 const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
-                const isCorrectPair = correctPosA < correctPosB;
+                const isCorrectPair = correctPosB === correctPosA + 1;
                 pairRow = <PairResultRow isCorrect={isCorrectPair} />;
               }
 
