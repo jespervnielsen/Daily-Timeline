@@ -2,18 +2,14 @@ interface PairResultRowProps {
   isCorrect: boolean;
   earlierItemTitle?: string;
   laterItemTitle?: string;
-  /** True when the user placed these two items in the correct relative order,
-   *  even if they are not adjacent in the correct answer. */
-  inCorrectOrder?: boolean;
 }
 
 export default function PairResultRow({
   isCorrect,
   earlierItemTitle,
   laterItemTitle,
-  inCorrectOrder,
 }: PairResultRowProps) {
-  if (isCorrect || inCorrectOrder) {
+  if (isCorrect) {
     return (
       <div className="pair-result-row pair-result-row--correct">
         <span className="pair-result-icon">✓</span>
