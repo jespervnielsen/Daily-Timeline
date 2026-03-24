@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { ReactNode } from 'react';
 import type { ScoreResult, Item } from '../types';
 import PairResultRow from './PairResultRow';
@@ -32,7 +31,6 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
 }
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
-  const [showCorrectTimeline, setShowCorrectTimeline] = useState(false);
   const { score, pairs, userOrder, correctOrder } = result;
 
   const tier = getTierLabel(score);
@@ -95,66 +93,59 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
         </div>
       </div>
 
-      {/* ── Player Order with Position Hints ── */}
-      <section className="player-order-section">
-        <h2 className="section-heading your-order-heading">Your Order</h2>
-        <div className="player-order-list">
-          {userOrder.map((item, i) => {
-            const positionHint = getPositionHint(item, i, correctOrder);
-            const hintCorrect = positionHint.startsWith('Perfect');
+      {/* ── Two-column comparison ── */}
+      <div className="timeline-comparison">
+        {/* Left: Your Order */}
+        <div className="timeline-column">
+          <h2 className="section-heading your-order-heading">Your Order</h2>
+          <div className="player-order-list">
+            {userOrder.map((item, i) => {
+              const positionHint = getPositionHint(item, i, correctOrder);
+              const hintCorrect = positionHint.startsWith('Perfect');
 
-            // Compute the pair between this item and the next in the user's order
-            let pairRow: ReactNode = null;
-            if (i < userOrder.length - 1) {
-              const nextItem = userOrder[i + 1];
-              const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
-              const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
-              const isCorrectPair = correctPosA < correctPosB;
-              pairRow = <PairResultRow isCorrect={isCorrectPair} />;
-            }
+              // Compute the pair between this item and the next in the user's order
+              let pairRow: ReactNode = null;
+              if (i < userOrder.length - 1) {
+                const nextItem = userOrder[i + 1];
+                const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
+                const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
+                const isCorrectPair = correctPosA < correctPosB;
+                pairRow = <PairResultRow isCorrect={isCorrectPair} />;
+              }
 
-            const correctPosition = correctOrder.findIndex((c) => c.id === item.id);
-            const correctPositionLabel = `#${correctPosition + 1}`;
+              const correctPosition = correctOrder.findIndex((c) => c.id === item.id);
+              const correctPositionLabel = `#${correctPosition + 1}`;
 
-            return (
-              <div key={item.id} className="player-order-group">
-                {/* Card */}
-                <div className="result-card">
-                  <WikimediaImage
-                    className="result-card-img"
-                    image={item.image}
-                    alt={item.title}
-                    width={100}
-                  />
-                  <div className="result-card-body">
-                    <span className="result-card-year">{formatYear(item.year)}</span>
-                    <span className="result-card-title">{item.title}</span>
-                    <span className={`result-card-hint ${hintCorrect ? 'hint-correct' : 'hint-wrong'}`}>
-                      {positionHint}
-                    </span>
-                    <span className={`result-card-correct-pos ${hintCorrect ? 'hint-correct' : ''}`}>
-                      {hintCorrect ? `→ ${correctPositionLabel} ✓` : `→ should be ${correctPositionLabel}`}
-                    </span>
+              return (
+                <div key={item.id} className="player-order-group">
+                  <div className="result-card">
+                    <WikimediaImage
+                      className="result-card-img"
+                      image={item.image}
+                      alt={item.title}
+                      width={100}
+                    />
+                    <div className="result-card-body">
+                      <span className="result-card-year">{formatYear(item.year)}</span>
+                      <span className="result-card-title">{item.title}</span>
+                      <span className={`result-card-hint ${hintCorrect ? 'hint-correct' : 'hint-wrong'}`}>
+                        {positionHint}
+                      </span>
+                      <span className={`result-card-correct-pos ${hintCorrect ? 'hint-correct' : ''}`}>
+                        {hintCorrect ? `→ ${correctPositionLabel} ✓` : `→ should be ${correctPositionLabel}`}
+                      </span>
+                    </div>
                   </div>
+                  {pairRow}
                 </div>
-                {pairRow}
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </section>
 
-      {/* ── Correct Timeline (collapsible) ── */}
-      <section className="correct-timeline-section">
-        <button
-          className="correct-timeline-toggle"
-          onClick={() => setShowCorrectTimeline((v) => !v)}
-          aria-expanded={showCorrectTimeline}
-        >
-          <span className="correct-timeline-toggle-arrow">{showCorrectTimeline ? '▲' : '▼'}</span>
-          {showCorrectTimeline ? 'Hide' : 'Show'} correct timeline
-        </button>
-        {showCorrectTimeline && (
+        {/* Right: Correct Order */}
+        <div className="timeline-column">
+          <h2 className="section-heading correct-order-heading">Correct Order</h2>
           <div className="correct-timeline-list">
             {correctOrder.map((item, i) => (
               <div key={item.id} className="correct-timeline-group">
@@ -189,8 +180,8 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               </div>
             ))}
           </div>
-        )}
-      </section>
+        </div>
+      </div>
 
     </div>
   );
