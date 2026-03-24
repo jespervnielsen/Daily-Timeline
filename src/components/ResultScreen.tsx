@@ -24,9 +24,9 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
   const correctIndex = correctOrder.findIndex((c) => c.id === item.id);
   const diff = correctIndex - userIndex;
   if (diff === 0) return 'Perfect placement ✓';
-  if (Math.abs(diff) > 1) return '';
-  if (diff > 0) return '1 place too early';
-  return '1 place too late';
+  if (diff === 1) return '1 place too early';
+  if (diff === -1) return '1 place too late';
+  return '2+ places off';
 }
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
@@ -109,15 +109,10 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               // inCorrectOrder: user placed itemA before itemB, which IS the right
               // relative order – even if they are not consecutive in the answer.
               pairInCorrectOrder = posA < posB;
-              // Only provide the specific "should come before" hint when both items
-              // are at most 1 place away from their correct position – otherwise the
-              // message is misleading for wildly misplaced items.
-              if (Math.abs(posA - i) <= 1 && Math.abs(posB - (i + 1)) <= 1) {
-                [earlierTitle, laterTitle] =
-                  posA <= posB
-                    ? [pair.itemA.title, pair.itemB.title]
-                    : [pair.itemB.title, pair.itemA.title];
-              }
+              [earlierTitle, laterTitle] =
+                posA <= posB
+                  ? [pair.itemA.title, pair.itemB.title]
+                  : [pair.itemB.title, pair.itemA.title];
             }
 
             return (
@@ -143,7 +138,6 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                 {pair && (
                   <PairResultRow
                     isCorrect={pair.correct}
-                    streak={pair.streakAtThisPoint}
                     earlierItemTitle={earlierTitle}
                     laterItemTitle={laterTitle}
                     inCorrectOrder={pairInCorrectOrder}
