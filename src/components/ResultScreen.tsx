@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { ReactNode } from 'react';
 import type { ScoreResult, Item } from '../types';
 import PairResultRow from './PairResultRow';
@@ -31,6 +32,7 @@ function getPositionHint(item: Item, userIndex: number, correctOrder: Item[]): s
 }
 
 export default function ResultScreen({ result, date, isRandom }: ResultScreenProps) {
+  const [showCorrectTimeline, setShowCorrectTimeline] = useState(false);
   const { score, pairs, userOrder, correctOrder } = result;
 
   const tier = getTierLabel(score);
@@ -108,16 +110,11 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
               const correctPosA = correctOrder.findIndex((c) => c.id === item.id);
               const correctPosB = correctOrder.findIndex((c) => c.id === nextItem.id);
               const isCorrectPair = correctPosA < correctPosB;
-              const earlierItem = isCorrectPair ? item : nextItem;
-              const laterItem = isCorrectPair ? nextItem : item;
-              pairRow = (
-                <PairResultRow
-                  isCorrect={isCorrectPair}
-                  earlierItemTitle={earlierItem.title}
-                  laterItemTitle={laterItem.title}
-                />
-              );
+              pairRow = <PairResultRow isCorrect={isCorrectPair} />;
             }
+
+            const correctPosition = correctOrder.findIndex((c) => c.id === item.id);
+            const correctPositionLabel = `#${correctPosition + 1}`;
 
             return (
               <div key={item.id} className="player-order-group">
@@ -135,6 +132,9 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
                     <span className={`result-card-hint ${hintCorrect ? 'hint-correct' : 'hint-wrong'}`}>
                       {positionHint}
                     </span>
+                    <span className={`result-card-correct-pos ${hintCorrect ? 'hint-correct' : ''}`}>
+                      {hintCorrect ? `→ ${correctPositionLabel} ✓` : `→ should be ${correctPositionLabel}`}
+                    </span>
                   </div>
                 </div>
                 {pairRow}
@@ -144,43 +144,52 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
         </div>
       </section>
 
-      {/* ── Correct Timeline (Reference) ── */}
+      {/* ── Correct Timeline (collapsible) ── */}
       <section className="correct-timeline-section">
-        <h2 className="section-heading correct-order-heading">Correct Order</h2>
-        <div className="correct-timeline-list">
-          {correctOrder.map((item, i) => (
-            <div key={item.id} className="correct-timeline-group">
-              <div className="correct-timeline-item">
-                <WikimediaImage
-                  className="correct-timeline-img"
-                  image={item.image}
-                  alt={item.title}
-                  width={100}
-                />
-                <div className="correct-timeline-info">
-                  <span className="correct-timeline-year">{formatYear(item.year)}</span>
-                  <span className="correct-timeline-title">{item.title}</span>
-                  {item.description && (
-                    <span className="correct-timeline-desc">{item.description}</span>
-                  )}
-                  {item.wikipedia && (
-                    <a
-                      className="wiki-link"
-                      href={item.wikipedia}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read more ↗
-                    </a>
-                  )}
+        <button
+          className="correct-timeline-toggle"
+          onClick={() => setShowCorrectTimeline((v) => !v)}
+          aria-expanded={showCorrectTimeline}
+        >
+          <span className="correct-timeline-toggle-arrow">{showCorrectTimeline ? '▲' : '▼'}</span>
+          {showCorrectTimeline ? 'Hide' : 'Show'} correct timeline
+        </button>
+        {showCorrectTimeline && (
+          <div className="correct-timeline-list">
+            {correctOrder.map((item, i) => (
+              <div key={item.id} className="correct-timeline-group">
+                <div className="correct-timeline-item">
+                  <WikimediaImage
+                    className="correct-timeline-img"
+                    image={item.image}
+                    alt={item.title}
+                    width={100}
+                  />
+                  <div className="correct-timeline-info">
+                    <span className="correct-timeline-year">{formatYear(item.year)}</span>
+                    <span className="correct-timeline-title">{item.title}</span>
+                    {item.description && (
+                      <span className="correct-timeline-desc">{item.description}</span>
+                    )}
+                    {item.wikipedia && (
+                      <a
+                        className="wiki-link"
+                        href={item.wikipedia}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Read more ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
+                {i < correctOrder.length - 1 && (
+                  <div className="correct-timeline-connector" />
+                )}
               </div>
-              {i < correctOrder.length - 1 && (
-                <div className="correct-timeline-connector" />
-              )}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
     </div>
