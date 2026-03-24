@@ -35,7 +35,6 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
 
   const tier = getTierLabel(score);
   const correctCount = pairs.filter((p) => p.correct).length;
-  const maxStreak = pairs.reduce((max, p) => Math.max(max, p.streakAtThisPoint), 0);
 
   const handleShare = async () => {
     const itemEmojis = userOrder.map((item) => {
@@ -79,11 +78,7 @@ export default function ResultScreen({ result, date, isRandom }: ResultScreenPro
           <span className="score-pairs-badge">
             {correctCount}/{pairs.length} pairs correct
           </span>
-          {maxStreak >= 2 && (
-            <span className="score-streak-badge">
-              Best streak: {maxStreak} 🔥
-            </span>
-          )}
+
         </div>
         <div className="result-actions">
           <button className="btn-share" onClick={handleShare}>
