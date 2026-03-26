@@ -15,8 +15,8 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
 
   // 1. Pair / Combo Scoring – rewards streaks of correctly ordered consecutive pairs
   //    Pairs are defined by the user's submitted order (source of truth for feedback rows).
-  //    A pair is correct when the two consecutive user-order items are also consecutive
-  //    in the correct timeline, matching exactly what the UI feedback rows display.
+  //    A pair is correct when the left item comes before the right item in the correct
+  //    timeline (relative ordering, not necessarily consecutive positions).
   let streak = 0;
   let pairScore = 0;
   const pairs: PairResult[] = [];
@@ -26,7 +26,7 @@ export function calculateScore(userOrder: Item[], correctOrder: Item[]): ScoreRe
     const itemB = userOrder[i + 1];
     const correctPosA = correctPositionMap.get(itemA.id)!;
     const correctPosB = correctPositionMap.get(itemB.id)!;
-    const correct = correctPosB === correctPosA + 1;
+    const correct = correctPosA < correctPosB;
     if (correct) {
       pairScore += 2 + streak * 0.5;
       streak += 1;
